@@ -5,7 +5,9 @@ Eine Sammlung der Lernzettel
 | Queue | Stack | List |
 |--|--|--
 | Fifo (first in first out)  |filo (first in last out)  |Jeder kennt den Nachfolger
-|Beispiel: Schlange im Supermarkt|Beispiel: Stpel an Kartons|Diese Komische Wartesituation beim Frisen Tool
+|Beispiel: Schlange im Supermarkt|Beispiel: Stpel an Kartons|Diese Komische Wartesituation beim Frisen 
+
+Tool
 <a href="
 <!--stackedit_data:
 eitatobi se.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main" ?target="_blank">Hier stackedit.io öffnen</a>
@@ -16,5 +18,6 @@ eyJoaXN0b3J5IjpbLTE3MDMwMTU0NSwxNjkxMjU5NzddfQ==
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzM0ODQ3NzFdfQ==
+eyJoaXN0b3J5IjpbLTEzNDk4NDY2NjMsLTE2NzM0ODQ3NzFdfQ
+==
 -->

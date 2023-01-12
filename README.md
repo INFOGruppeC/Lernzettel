@@ -11,4 +11,10 @@ https://stackedit.io/app#
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTUzMDM1Mjc5NiwtMTgxNjYzOTcxOV19
 -->
-<a href="https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main" target="_blank">Hier stackedit.io öffnen</a>
+<a href="https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main" target="_blank">Hier stackedit.io öffnen</a>|  |
+
+## Super Markdown Tool
+https://stackedit.io/app#
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjAxMzc4MTQ2M119
+-->

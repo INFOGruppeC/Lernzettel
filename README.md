@@ -17,7 +17,11 @@ eyJoaXN0b3J5IjpbLTE3MDMwMTU0NSwxNjkxMjU5NzddfQ==
 -->
 [Hier stackedit.io öffnen](https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main)
 
+Fifo (first in first out)  |filo (first in last out)  |
+|Beispiel: Schlange im Supermarkt|Beispiel: Stoppel an Kartons| |  |
 
+ Ser akdonhttps://stackedit.io/app#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2ODg2MzEwLDIwMTM3ODE0NjNdfQ==
+eyJoaXN0b3J5IjpbLTE2NjUwMjkwNTYsNDk2ODg2MzEwLDIwMT
+M3ODE0NjNdfQ==
 -->

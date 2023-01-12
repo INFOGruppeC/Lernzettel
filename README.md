@@ -8,11 +8,9 @@ Eine Sammlung der Lernzettel
 |Beispiel: Schlange im Supermarkt|Beispiel: Stpel an Kartons|Diese Komische Wartesituation beim Frisen ToolnTool
 
 ## Super Markdown Tool
-<a href="https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main" target="_blank" 
-
-
+<a href="https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main" target="_blank">Hier stackedit.io öffnen</a> 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY5OTYwNDU2XX0=
+eyJoaXN0b3J5IjpbLTExMzE4MzA0NjldfQ==
 -->

@@ -1,7 +1,7 @@
 # Lernzettel
 Eine Sammlung der Lernzettel
 
-Übersicht 
+Übersicht der linearen Datentypen
 | Queue | Stack | List |
 |--|--|--
 | Fifo (first in first out)  |filo (first in last out)  |Jeder kennt den Nachfolger
@@ -18,5 +18,5 @@ eitatobi se https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppe
 ## Super Markdown Tool
 https://stackedit.io/app#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU5ODI2MjYxLDIwMTM3ODE0NjNdfQ==
+eyJoaXN0b3J5IjpbMTM3MDM3MDk0LDIwMTM3ODE0NjNdfQ==
 -->

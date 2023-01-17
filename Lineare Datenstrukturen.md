@@ -12,6 +12,7 @@ Queue
 
 |Vorteile|Nachteile|Implementation
 |-|-|-|
+|Gut Geeignet für |schlecht geieignet für Sortieren|
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTMwNjQzNTY3MSwxOTE3MzY5MjgsMTk2Mj
 A5ODAxNSwtNzU1NDUzNjcxLDgxMjM1NzQ3NF19

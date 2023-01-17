@@ -10,8 +10,9 @@ Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer
 
 Queue
 
-|Vorteile|Nachteile||
+|Vorteile|Nachteile|Implementation
+|-|-|-|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzM2OTI4LDczODQwMDU3OSwxOTYyMD
-k4MDE1LC03NTU0NTM2NzEsODEyMzU3NDc0XX0=
+eyJoaXN0b3J5IjpbMTMwNjQzNTY3MSwxOTE3MzY5MjgsMTk2Mj
+A5ODAxNSwtNzU1NDUzNjcxLDgxMjM1NzQ3NF19
 -->

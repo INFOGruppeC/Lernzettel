@@ -10,8 +10,4 @@ Eine Sammlung der Lernzettel, wel
 
 [Hier stackedit.io öffnen](https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main)
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2ODI2Mzk1MywxNjk0MzQ5NzE4LDc3Nj
-c0NTY2OSwyMDcwODk5NTk0LDExNTgwMTQwMTQsLTEyMDAwMDYy
-NjQsLTExMzE4MzA0NjldfQ==
--->
+https://prod.liveshare.vsengsaas.visualstudio.com/join?1993501536C8E4A57FD2EAE89F99CF6B1DC3

@@ -11,16 +11,9 @@ Eine Sammlung der Lernzettel
 
 ## Super Markdown 
 
-
-<!--stackedit_data:
-eitatobi se https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main" ?target="_blank">Hier stackedit.io öffnen</a> >
-<!--stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main" target="_blank">Hier stackedit.io öffnen</a>
-_data:
-eyJoaXN0b3J5IjpbLTE3MDMwMTU0NSwxNjkxMjU5NzddfQ==
--->
 [Hier stackedit.io öffnen](https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQzNDgzNjcsMjA3MDg5OTU5NCwxMT
-U4MDE0MDE0LC0xMjAwMDA2MjY0LC0xMTMxODMwNDY5XX0=
+eyJoaXN0b3J5IjpbMjAzNzMzNjQ0MywyMDcwODk5NTk0LDExNT
+gwMTQwMTQsLTEyMDAwMDYyNjQsLTExMzE4MzA0NjldfQ==
 -->

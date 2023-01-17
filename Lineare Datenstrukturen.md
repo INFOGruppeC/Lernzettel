@@ -10,9 +10,8 @@ Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer
 
 ### Queue
 
-|Vorteile|Nachteile|Implementation
-|-|-|-|
-|Gut Geeignet für |schlecht geieignet für Sortieren|Neue Queue erstellen: `new Queue<ContentType>()`|
-|||
-|||boolean isEmpty() 
-|||void enqueue (ContentType pContent)
+|Anwendung |Implementation
+|-|-|
+|schlecht geieignet für Sortieren|Neue Queue erstellen: `new Queue<ContentType>()`|
+|Stappel|boolean isEmpty()|
+||void enqueue (ContentType pContent)|

@@ -1,17 +1,17 @@
 # Lernzettel Lineare Datenstrukturen
-Eine Sammlung der Lernzettel, welche die folgenden Themen abdecken:
+Eine Sammlung der Lernzettel, wel
+
+Übersichet die folgenden Themen abdecken:
 
 -lineare Datenstruckturen
 -nicht lineare Datenstrukturen
 -Datenbanken
--Autumaten und Sprachen
--Datenschutz
-
+-Autumaten und Sprachenchutzn
 
 [Hier stackedit.io öffnen](https://stackedit.io/app#providerId=githubWorkspace&owner=INFOGruppeC&repo=Lernzettel&branch=main)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDM0OTcxOCw3NzY3NDU2NjksMjA3MD
-g5OTU5NCwxMTU4MDE0MDE0LC0xMjAwMDA2MjY0LC0xMTMxODMw
-NDY5XX0=
+eyJoaXN0b3J5IjpbLTc2ODI2Mzk1MywxNjk0MzQ5NzE4LDc3Nj
+c0NTY2OSwyMDcwODk5NTk0LDExNTgwMTQwMTQsLTEyMDAwMDYy
+NjQsLTExMzE4MzA0NjldfQ==
 -->

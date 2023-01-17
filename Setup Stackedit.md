@@ -1,4 +1,4 @@
- 1. Oben rechts auf den # Knopf drücken
+ 1. Oben rechts auf den `#` Knopf drücken
  2. Workspaces
  3. Add a GItHub workspace
  4. Dann Github repo link auf `https://github.com/INFOGruppeC/Lernzettel` setzen und branch auf `main`

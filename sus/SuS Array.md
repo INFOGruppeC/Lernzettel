@@ -1,8 +1,8 @@
 # Sus Array
 
 ## Inhalt
- - [Insertion Sort](#Insertion%20Sort)
- - Selection Sort
+ - [Insertion Sort](#insertion-sort)
+ - [Selection Sort](#selection-sort)
  - Bubble Sort
  - Quicksort
 

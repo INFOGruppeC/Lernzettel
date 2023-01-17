@@ -14,4 +14,5 @@ Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer
 |-|-|-|
 |Gut Geeignet für |schlecht geieignet für Sortieren|Neue Queue erstellen: `new Queue<ContentType>()`|
 |||
-|||
+|||boolean isEmpty() 
+|||void enqueue (ContentType pContent)

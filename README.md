@@ -5,7 +5,8 @@ Eine Sammlung der Lernzettel
 | Queue | Stack | List |
 |--|--|--
 | Fifo (first in first out)  |filo (first in last out)  |Jeder kennt den Nachfolger
-|Beispiel: Schlange im Supermarkt|Beispiel: Stpel an Kartons|Diese Komische Wartesituation beim Frisen ToolnToolur 
+|Beispiel: Schlange im Supermarkt|Beispiel: Stpel an Kartons|Diese Komische Wartesituation beim Friseur
+||| 
 
 
 ## Super Markdown 
@@ -25,6 +26,6 @@ Fifo (first in first out)  |filo (first in last out)  |
 
  Ser akdonhttps://stackedit.io/app#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1ODAxNDAxNCwtMTIwMDAwNjI2NCwtMT
-EzMTgzMDQ2OV19
+eyJoaXN0b3J5IjpbLTE0ODE5MTQyODYsMTE1ODAxNDAxNCwtMT
+IwMDAwNjI2NCwtMTEzMTgzMDQ2OV19
 -->

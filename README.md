@@ -12,4 +12,4 @@ Eine Sammlung der Lernzettel, wel
 
 ## Liveshare Session
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?A3C330DCF5DB23925D6CA679856CDF91F0DB
+https://prod.liveshare.vsengsaas.visualstudio.com/join?3D8B2206CAC3104564FBD56F69D840AF818E

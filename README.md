@@ -4,7 +4,7 @@ Eine Sammlung der Lernzettel, wel
 Übersichet die folgenden Themen abdecken:
 
  - [Lineare Datenstruckturen](./Lineare%20Datenstrukturen.md)
-   - [Suchen und Sortieren](./sus/index.md)
+   - [Suchen und Sortieren](./sus)
      - [SuS Array](./sus/SuS%20Array.md)
  - [Nicht lineare Datenstrukturen](./Nicht%20lineare%20Datenstrukturen.md)
  - [Datenbanken](./Datenbanken.md)

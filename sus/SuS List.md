@@ -93,36 +93,7 @@ public static void selectionSort(List<Integer> list) {
   <summary>Beispielimplementation anzeigen</summary>
 
 ```java
-private List<Integer> selectionSort(List<Integer> list) {
-    List<Integer> helperList = new List<>();
-    while (!list.isEmpty())
-    {
-        list.toFirst();
-        helperList.toFirst();
-        
-        if (helperList.isEmpty()) {
-            helperList.insert(list.getContent());
-            list.remove();
-            continue;
-        }
-        boolean hasInserted = false;
-        while (helperList.hasAccess()) {
-            if (helperList.getContent() < list.getContent()) {
-                helperList.insert(list.getContent());
-                hasInserted = true;
-                break;
-            }
-            helperList.next();
-        }
-
-        if (!hasInserted) {
-            helperList.append(list.getContent());
-        }
-
-        list.remove();
-    }
-    return helperList;
-}
+// TODO
 ```
 
 </details>
@@ -152,36 +123,7 @@ public static void bubbleSort(List<Integer> list) {
   <summary>Beispielimplementation anzeigen</summary>
 
 ```java
-private List<Integer> bubbleSort(List<Integer> list) {
-    List<Integer> helperList = new List<>();
-    while (!list.isEmpty())
-    {
-        list.toFirst();
-        helperList.toFirst();
-        
-        if (helperList.isEmpty()) {
-            helperList.insert(list.getContent());
-            list.remove();
-            continue;
-        }
-        boolean hasInserted = false;
-        while (helperList.hasAccess()) {
-            if (helperList.getContent() < list.getContent()) {
-                helperList.insert(list.getContent());
-                hasInserted = true;
-                break;
-            }
-            helperList.next();
-        }
-
-        if (!hasInserted) {
-            helperList.append(list.getContent());
-        }
-
-        list.remove();
-    }
-    return helperList;
-}
+// TODO
 ```
 
 </details>
@@ -226,36 +168,7 @@ private static int partition(List<Integer> list, int left, int right) {
   <summary>Beispielimplementation anzeigen</summary>
 
 ```java
-private List<Integer> quickSort(List<Integer> list) {
-    List<Integer> helperList = new List<>();
-    while (!list.isEmpty())
-    {
-        list.toFirst();
-        helperList.toFirst();
-        
-        if (helperList.isEmpty()) {
-            helperList.insert(list.getContent());
-            list.remove();
-            continue;
-        }
-        boolean hasInserted = false;
-        while (helperList.hasAccess()) {
-            if (helperList.getContent() < list.getContent()) {
-                helperList.insert(list.getContent());
-                hasInserted = true;
-                break;
-            }
-            helperList.next();
-        }
-
-        if (!hasInserted) {
-            helperList.append(list.getContent());
-        }
-
-        list.remove();
-    }
-    return helperList;
-}
+// TODO
 ```
 
 </details>

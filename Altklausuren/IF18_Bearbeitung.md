@@ -10,7 +10,9 @@ Es ist sinnvoll die Einbrücher in einer Liste zu speichern, da es sich bei eine
 
 ## Aufgabe b)
 
-Die Funktion iteriert durch die Liste `alleGrundstuecke` und entnimmt nacheinander jedes Element aus dieser. Aus dem entnommenen Objekt des Typs `Grundstueck` wird mittels der eigenen Funktion `gibEinbrueche()` eine Liste mit allen Einbrüchen abgerufen. Wenn diese List nicht leer ist, dann wird das `Grundstueck`-Objekt einer 
+Die Funktion erstellt eine neue, leere Liste des ContentTypes `Grundstueck`. Dann iteriert sie durch die Liste `alleGrundstuecke` und entnimmt nacheinander jedes Element aus dieser. Aus dem entnommenen Objekt des Typs `Grundstueck` wird mittels der eigenen Funktion `gibEinbrueche()` eine Liste mit allen Einbrüchen abgerufen. Wenn diese List nicht leer ist, 
+...
+dann wird das `Grundstueck`-Objekt der zu Beginn neu erstellten Liste angefügt.  
 
 ```java
 public List<Grundstueck> ermittleGrundstueckeMitEinbruechen(Zeitstempel pTatzeit, int pMaxMinutenDifferenz) {
@@ -20,8 +22,7 @@ public List<Grundstueck> ermittleGrundstueckeMitEinbruechen(Zeitstempel pTatzeit
 
 ## Aufgabe c)
 
-
-
+Die Methode nimmt als Parameter pZahl und gibt die eine Liste mit den pZahl Grundstücken mit dem größten Gefahrenindex zurück. 
 
 ## Aufgabe d)
 Es ist korrekt, dass der Speicherbedarf optimiert wird, wenn der Gefährdungsindex nicht in jedem Grundstück gespeichert wird.

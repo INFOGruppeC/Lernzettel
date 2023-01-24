@@ -50,7 +50,8 @@ Jeden Durchlauf werden die benachbarten Werte verglichen und falls das Element h
 
 ### Nachteile 
 
-- Bei einem Datensatzt, der genau "falschrum" sortiert ist wird eine hohe anzahl an vergleichen benötigt
+- Bei einem Datensatzt, der genau "falschrum" sortiert ist wird eine hohe anzahl an vergleichen benötigt => schlechter worstcase
+- => schlecht Abschätzbar (geringe Stablilität)
 
 ## Quick Sort
 
@@ -59,6 +60,7 @@ Jeden Durchlauf werden die benachbarten Werte verglichen und falls das Element h
 
 
 ### Vorteile: 
+
 - 
 
 ### Nachteile 

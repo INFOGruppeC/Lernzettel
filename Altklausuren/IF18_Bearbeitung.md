@@ -10,13 +10,28 @@ Es ist sinnvoll die Einbrücher in einer Liste zu speichern, da es sich bei eine
 
 ## Aufgabe b)
 
-Die Funktion erstellt eine neue, leere Liste des ContentTypes `Grundstueck`. Dann iteriert sie durch die Liste `alleGrundstuecke` und entnimmt nacheinander jedes Element aus dieser. Aus dem entnommenen Objekt des Typs `Grundstueck` wird mittels der eigenen Funktion `gibEinbrueche()` eine Liste mit allen Einbrüchen abgerufen. Wenn diese List nicht leer ist, 
-...
-dann wird das `Grundstueck`-Objekt der zu Beginn neu erstellten Liste angefügt.  
+Die Funktion erstellt eine neue, leere Liste. Dann iteriert sie durch die Liste `alleGrundstuecke` und entnimmt nacheinander jedes Element aus dieser. Aus dem entnommenen Objekt wird mittels der eigenen Funktion `gibEinbrueche()` eine Liste mit allen Einbrüchen abgerufen. Wenn diese List nicht leer ist, wird nachgesehen, ob einer der Einbrüche aus der Liste innerhalb der übergebenen Tatzeit liegt. Wenn ja, dann wird das Grundstücks-Objekt der zu Beginn neu erstellten Liste angehangen.
 
 ```java
 public List<Grundstueck> ermittleGrundstueckeMitEinbruechen(Zeitstempel pTatzeit, int pMaxMinutenDifferenz) {
-    return liste; // Liste mit Grundstücken, bei denen mindestens ein Mal im angegebenen Zeitraum eingebrochen wurde
+    List<Grundstuecke> grundstueckeMitEinbruechen = new List<>();
+    alleGrundstuecke.toFirst();
+    while (!alleGrundstuecke.hasAccess()) {
+        Grundstueck aktuell = alleGrundstuecke.getContent();
+        List<Einbruch> einbrueche = aktuell.gibEinbrueche();
+        if (einbrueche.toFirst().hasAccess()) {
+            while (einbrueche.hasAccess()) {
+                Einbruch aktueller = einbrueche.getContent();
+                if (aktueller.gibTatzeit() >= pTatzeit-pMaxMinutenDifferenz && aktueller.gibTatzeit() <= pTatzeit+pMaxMinutenDifferenz) {
+                    grundstueckeMitEinbruechen.append(aktuell);
+                    break;
+                }
+            }
+
+        }
+        alleGrundstuecker.next();
+    }
+    return grundstueckeMitEinbruechen; // Liste mit Grundstücken, bei denen mindestens ein Mal im angegebenen Zeitraum eingebrochen wurde
 }
 ```
 

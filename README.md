@@ -15,5 +15,3 @@ Eine Sammlung der Lernzettel, wel
 
 https://prod.liveshare.vsengsaas.visualstudio.com/join?15F09CE5BBAEC03ACF0F58B20718BB31376A
 
-## Hover text
-This is a [hier was man anhovert](## "hier was man sieht beim hovern") example.

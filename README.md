@@ -12,4 +12,7 @@ Eine Sammlung der Lernzettel, wel
 
 ## Liveshare Session
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?2F4D262B06B6F22060A6D8E35065388EC621
+https://prod.liveshare.vsengsaas.visualstudio.com/join?15F09CE5BBAEC03ACF0F58B20718BB31376A
+
+## Hover text
+This is a [hier was man anhovert](## "hier was man sieht beim hovern") example.

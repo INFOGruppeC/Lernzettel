@@ -1,4 +1,4 @@
-# SuS List
+# [SuS](## "Suchen und Sortieren ") List
 Diese Liste ist sus :rat:
 
 ## Inhalt
@@ -33,35 +33,35 @@ public static void insertionSort(List<Integer> list) {
 
 ```java
 private List<Integer> insertionSort(List<Integer> list) {
-        List<Integer> helperList = new List<>();
-        while (!list.isEmpty())
-        {
-            list.toFirst();
-            helperList.toFirst();
-            
-            if (helperList.isEmpty()) {
-                helperList.insert(list.getContent());
-                list.remove();
-                continue;
-            }
-            boolean hasInserted = false;
-            while (helperList.hasAccess()) {
-                if (helperList.getContent() < list.getContent()) {
-                    helperList.insert(list.getContent());
-                    hasInserted = true;
-                    break;
-                }
-                helperList.next();
-            }
-
-            if (!hasInserted) {
-                helperList.append(list.getContent());
-            }
-
+    List<Integer> helperList = new List<>();
+    while (!list.isEmpty())
+    {
+        list.toFirst();
+        helperList.toFirst();
+        
+        if (helperList.isEmpty()) {
+            helperList.insert(list.getContent());
             list.remove();
+            continue;
         }
-        return helperList;
+        boolean hasInserted = false;
+        while (helperList.hasAccess()) {
+            if (helperList.getContent() < list.getContent()) {
+                helperList.insert(list.getContent());
+                hasInserted = true;
+                break;
+            }
+            helperList.next();
+        }
+
+        if (!hasInserted) {
+            helperList.append(list.getContent());
+        }
+
+        list.remove();
     }
+    return helperList;
+}
 ```
 
 </details>
@@ -94,35 +94,35 @@ public static void selectionSort(List<Integer> list) {
 
 ```java
 private List<Integer> selectionSort(List<Integer> list) {
-        List<Integer> helperList = new List<>();
-        while (!list.isEmpty())
-        {
-            list.toFirst();
-            helperList.toFirst();
-            
-            if (helperList.isEmpty()) {
-                helperList.insert(list.getContent());
-                list.remove();
-                continue;
-            }
-            boolean hasInserted = false;
-            while (helperList.hasAccess()) {
-                if (helperList.getContent() < list.getContent()) {
-                    helperList.insert(list.getContent());
-                    hasInserted = true;
-                    break;
-                }
-                helperList.next();
-            }
-
-            if (!hasInserted) {
-                helperList.append(list.getContent());
-            }
-
+    List<Integer> helperList = new List<>();
+    while (!list.isEmpty())
+    {
+        list.toFirst();
+        helperList.toFirst();
+        
+        if (helperList.isEmpty()) {
+            helperList.insert(list.getContent());
             list.remove();
+            continue;
         }
-        return helperList;
+        boolean hasInserted = false;
+        while (helperList.hasAccess()) {
+            if (helperList.getContent() < list.getContent()) {
+                helperList.insert(list.getContent());
+                hasInserted = true;
+                break;
+            }
+            helperList.next();
+        }
+
+        if (!hasInserted) {
+            helperList.append(list.getContent());
+        }
+
+        list.remove();
     }
+    return helperList;
+}
 ```
 
 </details>
@@ -153,35 +153,35 @@ public static void bubbleSort(List<Integer> list) {
 
 ```java
 private List<Integer> bubbleSort(List<Integer> list) {
-        List<Integer> helperList = new List<>();
-        while (!list.isEmpty())
-        {
-            list.toFirst();
-            helperList.toFirst();
-            
-            if (helperList.isEmpty()) {
-                helperList.insert(list.getContent());
-                list.remove();
-                continue;
-            }
-            boolean hasInserted = false;
-            while (helperList.hasAccess()) {
-                if (helperList.getContent() < list.getContent()) {
-                    helperList.insert(list.getContent());
-                    hasInserted = true;
-                    break;
-                }
-                helperList.next();
-            }
-
-            if (!hasInserted) {
-                helperList.append(list.getContent());
-            }
-
+    List<Integer> helperList = new List<>();
+    while (!list.isEmpty())
+    {
+        list.toFirst();
+        helperList.toFirst();
+        
+        if (helperList.isEmpty()) {
+            helperList.insert(list.getContent());
             list.remove();
+            continue;
         }
-        return helperList;
+        boolean hasInserted = false;
+        while (helperList.hasAccess()) {
+            if (helperList.getContent() < list.getContent()) {
+                helperList.insert(list.getContent());
+                hasInserted = true;
+                break;
+            }
+            helperList.next();
+        }
+
+        if (!hasInserted) {
+            helperList.append(list.getContent());
+        }
+
+        list.remove();
     }
+    return helperList;
+}
 ```
 
 </details>
@@ -227,35 +227,35 @@ private static int partition(List<Integer> list, int left, int right) {
 
 ```java
 private List<Integer> quickSort(List<Integer> list) {
-        List<Integer> helperList = new List<>();
-        while (!list.isEmpty())
-        {
-            list.toFirst();
-            helperList.toFirst();
-            
-            if (helperList.isEmpty()) {
-                helperList.insert(list.getContent());
-                list.remove();
-                continue;
-            }
-            boolean hasInserted = false;
-            while (helperList.hasAccess()) {
-                if (helperList.getContent() < list.getContent()) {
-                    helperList.insert(list.getContent());
-                    hasInserted = true;
-                    break;
-                }
-                helperList.next();
-            }
-
-            if (!hasInserted) {
-                helperList.append(list.getContent());
-            }
-
+    List<Integer> helperList = new List<>();
+    while (!list.isEmpty())
+    {
+        list.toFirst();
+        helperList.toFirst();
+        
+        if (helperList.isEmpty()) {
+            helperList.insert(list.getContent());
             list.remove();
+            continue;
         }
-        return helperList;
+        boolean hasInserted = false;
+        while (helperList.hasAccess()) {
+            if (helperList.getContent() < list.getContent()) {
+                helperList.insert(list.getContent());
+                hasInserted = true;
+                break;
+            }
+            helperList.next();
+        }
+
+        if (!hasInserted) {
+            helperList.append(list.getContent());
+        }
+
+        list.remove();
     }
+    return helperList;
+}
 ```
 
 </details>

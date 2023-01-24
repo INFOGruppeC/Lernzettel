@@ -1,4 +1,5 @@
-# Sus Array
+# [SuS](## "Suchen und Sortieren ") Array
+
 
 ## Inhalt
  - [Insertion Sort](#insertion-sort)

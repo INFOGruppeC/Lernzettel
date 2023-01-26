@@ -7,6 +7,7 @@
  - [Bubble Sort](#bubble-sort)
  - [Quicksort](#quick-sort)
 
+
 ## Insertion Sort
 ```java
 public static void insertionSort(int[] array) {
@@ -21,6 +22,10 @@ public static void insertionSort(int[] array) {
     }
 }
 ```
+##  [sub-section](https://github.com/INFOGruppeC/Lernzettel/tree/main/sus#insertion-sort) 
+ - [Funktionsweise](#https://github.com/INFOGruppeC/Lernzettel/tree/main/sus#insertion-sort)
+
+
 ## Selection Sort
 ```java
 public static void selectionSort(int[] array) {

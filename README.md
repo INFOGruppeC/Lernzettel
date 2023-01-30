@@ -13,5 +13,5 @@ Eine Sammlung der Lernzettel, wel
 
 ## Liveshare Session
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?15F09CE5BBAEC03ACF0F58B20718BB31376A
+https://prod.liveshare.vsengsaas.visualstudio.com/join?A133D3E687FD79D1CFD91810749E9E2D735B
 

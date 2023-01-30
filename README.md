@@ -1,9 +1,9 @@
 # Lernzettel Lineare Datenstrukturen
-Eine Sammlung der Lernzettel, wel
+Eine Sammlung der Lernzettel, 
 
 Übersichet die folgenden Themen abdecken:
 
- - [Lineare Datenstruckturen](./Lineare%20Datenstrukturen.md)
+ - [Lineare Datenstrukturen](./Lineare%20Datenstrukturen.md)
    - [Suchen und Sortieren](./sus/README.md)
      - [SuS Array](./sus/SuS%20Array.md)
      - [SuS List](./sus/SuS%20List.md)

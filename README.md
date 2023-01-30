@@ -1,7 +1,7 @@
-# Lernzettel Lineare Datenstrukturen
-Eine Sammlung der Lernzettel, 
+# Lernzettel
+Eine Sammlung der Lernzettel für das Abitur 2023 im Informatik-LK.
 
-Übersichet die folgenden Themen abdecken:
+Abgedeckt sind die folgenden Themen:
 
  - [Lineare Datenstrukturen](./Lineare%20Datenstrukturen.md)
    - [Suchen und Sortieren](./sus/README.md)
@@ -10,6 +10,12 @@ Eine Sammlung der Lernzettel,
  - [Nicht lineare Datenstrukturen](./Nicht%20lineare%20Datenstrukturen.md)
  - [Datenbanken](./Datenbanken.md)
  - [Automaten und Sprachen](./Automaten%20und%20Sprachen.md)
+ 
+ Zusätzliches Material:
+ 
+ - [Abiturklassen](./Abiturklassen/)
+ - [Altklausuren](./Altklausuren/)
+ - [Altlernzettel](./Altlernzettel/)
 
 ## Liveshare Session
 

@@ -1,7 +1,11 @@
-# Abiturklassen
+# Quellcode der Abiturklassen
 
-Der Quellcode der unbearbeiteten Abiturklassen Stack, Queue und List wie auf den [Lernzetteln](../Lineare%20Datenstrukturen.md) beschrieben.
+Hier findet sich der Quellcode zu allen für das Abitur relevanten Java-Klassen.
 
-- [Stack](Stack.java)
-- [Queue](Queue.java)
-- [List](List.java)
+- [Lineare Datenstrukturen](Lineare%20Datenstrukturen/)
+    - [Stack](Lineare%20Datenstrukturen/Stack.java) 
+    - [Queue](Lineare%20Datenstrukturen/Queue.java)
+    - [List](Lineare%20Datenstrukturen/List.java)
+
+- [Nicht lineare Datenstrukturen](Nicht%20lineare%20Datenstrukturen/)
+    - []()

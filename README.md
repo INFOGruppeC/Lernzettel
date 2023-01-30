@@ -4,6 +4,7 @@ Eine Sammlung der Lernzettel für das Abitur 2023 im Informatik-LK.
 Abgedeckt sind die folgenden Themen:
 
  - [Lineare Datenstrukturen](./Lineare%20Datenstrukturen.md)
+   - [Praxisprojekt](https://github.com/INFOGruppeC/Praxissimulation)
    - [Suchen und Sortieren](./sus/README.md)
      - [SuS Array](./sus/SuS%20Array.md)
      - [SuS List](./sus/SuS%20List.md)

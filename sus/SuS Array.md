@@ -50,6 +50,8 @@ public static void selectionSort(int[] array) {
     }
 }
 ```
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#selection-sort)
+
 ### Bubble Sort
 
 ```java
@@ -65,6 +67,8 @@ public static void bubbleSort(int[] array) {
     }
 }
 ```
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#bubble-sort)
+
 ### Quick Sort
 ```java
 public static void quickSort(int[] array) {
@@ -96,6 +100,7 @@ private static int partition(int[] array, int left, int right) {
     return i + 1;
 }
 ```
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#quick-sort)
 
 ## Suchen
 

@@ -26,13 +26,30 @@ Quellcode Stack:
 
 |Anwendung |Implementation
 |-|-|
-|schlecht geieignet für Sortieren|Neue Queue erstellen: `new Queue<ContentType>()`|
+|schlecht geieignet für Sortieren|Neue Queue erstellen: ```java
+ new Queue<ContentType>()```|
 |Stappel|boolean isEmpty()|
 ||void enqueue (ContentType pContent)|
 
 ### List
 
-|Anwendung |Implementation
-|-|-|
+Implementation: 
+```java 
+List neueListe<Integer>=new Liste <Integer>();
+
+```
+
+```java 
+neueListe.isEmpty();
+```
+
+```java 
+neueListe.hasAccess();
+```
+
+```java 
+neueListe.hasAccess();
+```
+
 
 

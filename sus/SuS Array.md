@@ -31,7 +31,7 @@ public static void insertionSort(int[] array) {
     }
 }
 ```
-[Funktionsweise](#https://github.com/INFOGruppeC/Lernzettel/tree/main/sus#insertion-sort)
+[Funktionsweise](#https://github.com/INFOGruppeC/Lernzettel/tree/main/sus/README.md#insertion-sort)
 
 
 ### Selection Sort

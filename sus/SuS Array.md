@@ -2,10 +2,13 @@
 
 
 ## Inhalt
- - [Insertion Sort](#insertion-sort)
- - [Selection Sort](#selection-sort)
- - [Bubble Sort](#bubble-sort)
- - [Quicksort](#quick-sort)
+ - Sortieren
+   - [Insertion Sort](#insertion-sort)
+   - [Selection Sort](#selection-sort)
+   - [Bubble Sort](#bubble-sort)
+   - [Quicksort](#quick-sort)
+ - Suchen
+   - 
 
 
 ## Insertion Sort

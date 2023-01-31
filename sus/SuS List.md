@@ -2,14 +2,20 @@
 Diese Liste ist sus :rat:
 
 ## Inhalt
- - Sortieren
-   - [Insertion Sort](#insertion-sort)
-   - [Selection Sort](#selection-sort)
-   - [Bubble Sort](#bubble-sort)
-   - [Quicksort](#quick-sort)
- - Suchen
+- [SuS List](#sus-list)
+  - [Inhalt](#inhalt)
+  - [Sortieren](#sortieren)
+    - [Insertion Sort](#insertion-sort)
+    - [Selection Sort](#selection-sort)
+    - [Bubble Sort](#bubble-sort)
+    - [Quick Sort](#quick-sort)
+  - [Suchen](#suchen)
+    - [Lineare Suche](#lineare-suche)
+    - [Binäre Suche](#binäre-suche)
 
-## Insertion Sort
+## Sortieren
+
+### Insertion Sort
 
 <details>
   <summary>Beispielimplementation anzeigen</summary>
@@ -50,7 +56,7 @@ private List<Integer> insertionSort(List<Integer> list) {
 
 </details>
 
-## Selection Sort
+### Selection Sort
 
 
 <details>
@@ -90,7 +96,7 @@ private List<Integer> selectionSort(List<Integer> list) {
 
 </details>
 
-## Bubble Sort
+### Bubble Sort
 
 
 <details>
@@ -130,7 +136,7 @@ private List<Integer> bubblesort(List<Integer> list) {
 
 </details>
 
-## Quick Sort
+### Quick Sort
 
 
 <details>
@@ -165,3 +171,58 @@ public List<Integer> quicksort(List<Integer> list) {
 ```
 
 </details>
+
+## Suchen
+
+### Lineare Suche
+```java
+public int linearSearch(List<Integer> list, int search) {
+    list.toFirst();
+    int i = 0;
+    while (list.hasAccess()) {
+        i++;
+        if (list.getContent() == search) {
+            return i;
+        }
+        list.next();
+    }
+    return -1;
+}
+```
+
+### Binäre Suche
+```java
+public int binarySearch(List<Integer> list, int search) {
+    int left = 0;
+    int right = getSize(list) - 1;
+    list.toFirst();
+    while (left <= right) {
+        int middle = (left + right) / 2;
+        list.toFirst();
+        int i = 0;
+        for (i = 0; i < middle; i++) {
+            list.next();
+        }
+        if (list.getContent() == search) {
+            return i;
+        } else if (list.getContent() < search) {
+            left = middle + 1;
+        } else {
+            right = middle - 1;
+        }
+    }
+    return -1;
+}
+```
+
+```java
+private int getSize(List<Integer> list) {
+    int size = 0;
+    list.toFirst();
+    while (list.hasAccess()) {
+        size++;
+        list.next();
+    }
+    return size;
+}
+```

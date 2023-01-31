@@ -53,12 +53,12 @@ Ziel | Umsetzung
 |--|--|
 |Initialisieren einer neuen Liste|`List neueListe <ContentType> = new Liste <ContentType>();`
 |Abfragen, ob die Liste leer ist. Wenn sie leer ist, wird der Wahrheitswert `true` zurückgegeben.|`neueListe.isEmpty();`
-|Prüfen, ob das aktuell gewählte Element existiert ???????|`neueListe.hasAccess();`
-||`neueListe.next();`
-||`neueListe.toFirst();`
-||`neueListe.toLast();`
-||`neueListe.getContent();`
-||`neueListe.setContent();`
-||`neueListe.insert();`
-||`neueListe.append();`
-||`neueListe.concat();`
+|Prüfen, ob Zugriff auf die Liste besteht. Ist die |`neueListe.hasAccess(); => boolean`
+|setzt das nächste Element der Liste als aktuelles Element|`neueListe.next();`
+|setzt das erste Element der Liste als aktuelles Element|`neueListe.toFirst();`
+|setzt das letze Element der Liste als aktuelles Element|`neueListe.toLast();`
+|gibt den Wert des aktuellen Objektes wieder |`neueListe.getContent(); => ContentType`
+|setzt den Wert des aktuellen Objektest|`neueListe.setContent();`
+|fügt ein neues Objekt der Klasse `ContentType` nach der aktuellen Position in die Liste ein |`neueListe.insert();`
+|fügt ein neues Objekt der Klasse `ContentType`am Ende der Liste ein|`neueListe.append();`
+|hängt eine Liste an das Ende der Liste an|`neueListe.concat();`

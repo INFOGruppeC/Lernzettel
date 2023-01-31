@@ -53,7 +53,7 @@ Ziel | Umsetzung
 |--|--|
 |Initialisieren einer neuen Liste|`List neueListe <ContentType> = new Liste <ContentType>();`
 |Abfragen, ob die Liste leer ist. Wenn sie leer ist, wird der Wahrheitswert `true` zurückgegeben.|`neueListe.isEmpty();`
-|Prüfen, ob Zugriff auf die Liste besteht. Ist die |`neueListe.hasAccess(); => boolean`
+|Prüfen, ob Zugriff auf die Liste besteht. Wenn die Liste leer ist oder das aktuelle Element am Ende der letzen Liste steht, wird `true` zurückgegeben |`neueListe.hasAccess(); => boolean`
 |setzt das nächste Element der Liste als aktuelles Element|`neueListe.next();`
 |setzt das erste Element der Liste als aktuelles Element|`neueListe.toFirst();`
 |setzt das letze Element der Liste als aktuelles Element|`neueListe.toLast();`

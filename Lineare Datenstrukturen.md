@@ -10,6 +10,8 @@ Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer
 
 ### Array
 
+<img src=".images/java_array.jpg" alt="Java Array Grafik" width="400"/>
+
 |Anwendung |Implementation
 |-|-|
 
@@ -17,39 +19,48 @@ Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer
 
 ### Stack
 
-|Anwendung |Implementation
-|-|-|
+<img src=".images/java_stack.jpg" alt="Java Stack Grafik" width="400"/>
 
-Quellcode Stack: 
+> Klassischer Stapelspeicher
+
+Ziel | Umsetzung 
+|--|--|
+|Initialisieren eines neuen Stacks|`Stack neuerStack<ContentType>=new Stack <ContentType>();`
+|Abfrage, ob der gegebene Stapel befüllt ist. Ist der gegebene Stack leer, wird der Wahrheitswert `true` zurück gegeben |`neuerStack.isEmpty(); => Booooolean`
+|Setzt ein neues Object der Klasse `ContentType` auf den bereits bestehenden Stack drauf |`neuerStack.push();`
+|Löscht das oberste Element des Stapels|`neuerStack.pop();`
+|Gibt das oberste Objekt des Stackt zurück|`neuerStack.top()=> ContentType;`
+
 
 ### Queue
 
-|Anwendung |Implementation
-|-|-|
-|schlecht geieignet für Sortieren|Neue Queue erstellen: ```java
- new Queue<ContentType>()```|
-|Stappel|boolean isEmpty()|
-||void enqueue (ContentType pContent)|
+<img src=".images/java_queue.jpg" alt="Java Queue Grafik" width="400"/>
+
+Ziel | Umsetzung 
+|--|--|
+||`Queue neueQueue <ContentType> = new Queue <ContentType>();`
+||`neueQueue.isEmpty();`
+||`neueQueue.enqueue();`
+||`neueQueue.dequeue();`
+||`neueQueue.front();`
+
+
+
 
 ### List
 
-Implementation: 
-```java 
-List neueListe<Integer>=new Liste <Integer>();
+<img src=".images/java_list.jpg" alt="Java List Grafik" width="400"/>
 
-```
-
-```java 
-neueListe.isEmpty();
-```
-
-```java 
-neueListe.hasAccess();
-```
-
-```java 
-neueListe.hasAccess();
-```
-
-
-
+Ziel | Umsetzung 
+|--|--|
+||`List neueListe<ContentType>=new Liste <ContentType>();`
+||`neueListe.isEmpty();`
+||`neueListe.hasAccess();`
+||`neueListe.next();`
+||`neueListe.toFirst();`
+||`neueListe.toLast();`
+||`neueListe.getContent();`
+||`neueListe.setContent();`
+||`neueListe.insert();`
+||`neueListe.append();`
+||`neueListe.concat();`

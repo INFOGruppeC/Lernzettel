@@ -1,3 +1,8 @@
+/*
+ *   Copyright (c) 2023 Codineer Digital
+ *   All rights reserved.
+ *   Unauthorized use, reproduction, and distribution of this source code is strictly prohibited.
+ */
 /**
  * <p>
  * Materialien zu den zentralen NRW-Abiturpruefungen im Fach Informatik ab 2018

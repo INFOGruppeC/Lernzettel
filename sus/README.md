@@ -20,7 +20,7 @@ Hier findest du die Lernzettel zum Thema Suchen und Sortieren
 
 ### Lineare Suche
 
-<img src=".images/lineare_suche.jpg" alt="Lineare Suche Grafik" width="400"/>
+<img src="../.images/lineare_suche.jpg" alt="Lineare Suche Grafik" width="400"/>
 
 #### Funktionsweise:
 
@@ -40,7 +40,7 @@ Die lineare Suche sucht nach einem Element in einer Liste, indem es jedes Elemen
 
 ### Binäre Suche
 
-<img src=".images/binaere_suche.jpg" alt="Binäre Suche Grafik" width="400"/>
+<img src="../.images/binaere_suche.jpg" alt="Binäre Suche Grafik" width="400"/>
 
 #### Funktionsweise:
 
@@ -61,7 +61,7 @@ Die binäre Suche sucht nach einem Element in einer Liste, indem es das Element 
 
 ### Insertion Sort
 
-<img src=".images/insertion_sort.jpg" alt="Insertion Sort Grafik" width="400"/>
+<img src="../.images/insertion_sort.jpg" alt="Insertion Sort Grafik" width="400"/>
 
 #### Funktionsweise:
 
@@ -80,7 +80,7 @@ Dazu wird das Element mit dem letzten Element der sortierten Liste verglichen. F
 
 ### Selection Sort
 
-<img src=".images/selection_sort.jpg" alt="Selection Sort Grafik" width="400"/>
+<img src="../.images/selection_sort.jpg" alt="Selection Sort Grafik" width="400"/>
 
 #### Funktionsweise:
 
@@ -99,7 +99,7 @@ Dazu wird das kleinste Element gesucht und mit dem ersten Element der sortierten
 -  Kein Best Case
 ### Bubble Sort
 
-<img src=".images/bubble_sort.jpg" alt="Bubble Sort Grafik" width="400"/>
+<img src="../.images/bubble_sort.jpg" alt="Bubble Sort Grafik" width="400"/>
 
 #### Funktionsweise:
 
@@ -117,7 +117,7 @@ Jeden Durchlauf werden die benachbarten Werte verglichen und falls das Element h
 
 ### Quick Sort
 
-<img src=".images/quick_sort.jpg" alt="Quick Sort Grafik" width="400"/>
+<img src="../.images/quick_sort.jpg" alt="Quick Sort Grafik" width="400"/>
 
 #### Funktionsweise:
   Der Datensatzt wird in zwei Datensätze geteilt, je nachdem ob sie größer oder kleiner als der Referenzwert sind. Diese Listen werden dann rekursiv erneut geiteilt bis nur noch ein Wert vorliegt und man die nun sortierten Einzelwerte zusammenfügt

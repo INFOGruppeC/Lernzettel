@@ -21,8 +21,6 @@ Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer
 
 <img src=".images/java_stack.jpg" alt="Java Stack Grafik" width="400"/>
 
-> Klassischer Stapelspeicher
-
 Ziel | Umsetzung 
 |--|--|
 |Initialisieren eines neuen Stacks|`Stack neuerStack <ContentType> =new Stack <ContentType>();`
@@ -53,9 +51,9 @@ Ziel | Umsetzung
 
 Ziel | Umsetzung 
 |--|--|
-||`List neueListe <ContentType> = new Liste <ContentType>();`
-||`neueListe.isEmpty();`
-||`neueListe.hasAccess();`
+|Initialisieren einer neuen Liste|`List neueListe <ContentType> = new Liste <ContentType>();`
+|Abfragen, ob die Liste leer ist. Wenn sie leer ist, wird der Wahrheitswert `true` zurückgegeben.|`neueListe.isEmpty();`
+|Prüfen, ob das aktuell gewählte Element existiert ???????|`neueListe.hasAccess();`
 ||`neueListe.next();`
 ||`neueListe.toFirst();`
 ||`neueListe.toLast();`

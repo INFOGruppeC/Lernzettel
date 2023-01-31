@@ -10,7 +10,7 @@ Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer
 
 ### Array
 
-<img src=".images/java_array.jpg" alt="Java Array Grafik" width="400" style="float:right; padding:16px"/>
+<img src=".images/java_array.jpg" alt="Java Array Grafik" width="400"/>
 
 
 |Anwendung |Implementation

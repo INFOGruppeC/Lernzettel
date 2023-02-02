@@ -19,4 +19,4 @@ Abgedeckt sind die folgenden Themen:
  - [Altlernzettel](./Altlernzettel/)
 
 ## Liveshare Session
-https://prod.liveshare.vsengsaas.visualstudio.com/join?95B48400D5DE9A74704DE8CEFF19C004DBA0
+https://prod.liveshare.vsengsaas.visualstudio.com/join?0CF5E1FCB720AB347DFEAA462CC84DC9810B

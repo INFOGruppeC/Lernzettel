@@ -15,6 +15,9 @@ Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer
 
 |Anwendung |Implementation
 |-|-|
+|Initialisierung eines neuen Arrays der Klasse `ContentType` mit der länge `x`| `newArray ContentType [] = new ContentType [x]` |
+|Erfragen des Wertes in Feld `x` des Arrays| `newArray[x]` |
+
 
 
 

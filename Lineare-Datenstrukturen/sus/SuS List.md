@@ -53,7 +53,7 @@ private List<Integer> insertionSort(List<Integer> list) {
     return helperList;
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#insertion-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#insertion-sort)
                                                            
 </details>
 
@@ -95,7 +95,7 @@ private List<Integer> selectionSort(List<Integer> list) {
 }
 ```
   
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#selection-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#selection-sort)
 
 </details>
 
@@ -136,7 +136,7 @@ private List<Integer> bubblesort(List<Integer> list) {
     return list;
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#bubble-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#bubble-sort)
 
 </details>
 
@@ -174,7 +174,7 @@ public List<Integer> quicksort(List<Integer> list) {
 }
 ```
   
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#quick-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus#quick-sort)
 
 </details>
 
@@ -195,6 +195,8 @@ public int linearSearch(List<Integer> list, int search) {
     return -1;
 }
 ```
+
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus#lineare-suche)
 
 ### Binäre Suche
 ```java
@@ -232,3 +234,4 @@ private int getSize(List<Integer> list) {
     return size;
 }
 ```
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus#binäre-suche)

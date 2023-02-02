@@ -31,7 +31,7 @@ public static void insertionSort(int[] array) {
     }
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/Lineare-Datenstrukturen/sus#insertion-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/tree/main/Lineare-Datenstrukturen/sus#insertion-sort)
 
 
 ### Selection Sort
@@ -116,7 +116,7 @@ public static int linearSearch(int[] array, int value) {
 }
 ```
 
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#lineare-suche)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#lineare-suche)
 
 
 ### Binäre Suche

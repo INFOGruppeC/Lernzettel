@@ -1,1 +1,0 @@
-# Nicht lineare Datenstrukturen

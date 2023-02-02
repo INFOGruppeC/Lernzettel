@@ -2,6 +2,19 @@
 
 Modellierung, Implementierung und Anwendung dynamischer und statischer, linearer Datenstrukturen
 
+
+
+##Statische und Dynamische Datenstrukturen 
+
+
+###Statische Datenstrukturen 
+Statische Datenstrukturen besitzen eine feste Speichergröße, welche während der Laufzeit nicht geändert werden kann.
+
+###Dynamische Datenstrukturen 
+
+Im Gegensatz zu statischen Datenstrukturen wie beispielsweise dem Array können sich dynamische Datenstrukturen zur Laufzeit des Programms an den wachsenden (oder sinkenden) Speicherbedarf anpassen. Möglich wird dies durch die Verwendung von Zeigern (Pointern, Referenzen).
+
+
 ## Übersicht der linearen Datentypen
 | Queue | Stack | List |Array |
 |--|--|--|--

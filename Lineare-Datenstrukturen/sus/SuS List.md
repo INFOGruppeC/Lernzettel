@@ -53,7 +53,7 @@ private List<Integer> insertionSort(List<Integer> list) {
     return helperList;
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#insertion-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#insertion-sort)
                                                            
 </details>
 
@@ -95,7 +95,7 @@ private List<Integer> selectionSort(List<Integer> list) {
 }
 ```
   
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#selection-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#selection-sort)
 
 </details>
 
@@ -136,7 +136,7 @@ private List<Integer> bubblesort(List<Integer> list) {
     return list;
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#bubble-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#bubble-sort)
 
 </details>
 

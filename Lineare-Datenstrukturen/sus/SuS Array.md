@@ -31,7 +31,7 @@ public static void insertionSort(int[] array) {
     }
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/Lineare-Datenstrukturen/sus/#insertion-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/Lineare-Datenstrukturen/sus#insertion-sort)
 
 
 ### Selection Sort
@@ -50,7 +50,7 @@ public static void selectionSort(int[] array) {
     }
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#selection-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#selection-sort)
 
 ### Bubble Sort
 
@@ -67,7 +67,7 @@ public static void bubbleSort(int[] array) {
     }
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#bubble-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#bubble-sort)
 
 ### Quick Sort
 ```java
@@ -100,7 +100,7 @@ private static int partition(int[] array, int left, int right) {
     return i + 1;
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#quick-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#quick-sort)
 
 ## Suchen
 
@@ -115,6 +115,9 @@ public static int linearSearch(int[] array, int value) {
     return -1;
 }
 ```
+
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#lineare-suche)
+
 
 ### Binäre Suche
 ```java

@@ -23,7 +23,7 @@ Im Gegensatz zu statischen Datenstrukturen wie beispielsweise dem Array können 
 
 ### Array
 
-<img src=".images/java_array.jpg" alt="Java Array Grafik" width="400"/>
+<img src=".images/java_array.jpg" alt="Java Array Grafik" width="600"/>
 
 
 |Anwendung |Implementation
@@ -38,7 +38,7 @@ Im Gegensatz zu statischen Datenstrukturen wie beispielsweise dem Array können 
 
 ### Stack
 
-<img src=".images/java_stack.jpg" alt="Java Stack Grafik" width="400"/>
+<img src=".images/stack.gif" alt="Java Stack Grafik" width="600"/>
 
 Ziel | Umsetzung 
 |--|--|
@@ -51,7 +51,7 @@ Ziel | Umsetzung
 
 ### Queue
 
-<img src=".images/java_queue.jpg" alt="Java Queue Grafik" width="400"/>
+<img src=".images/queue2.gif" alt="Java Queue Grafik" width="600"/>
 
 Ziel | Umsetzung 
 |--|--|
@@ -66,7 +66,7 @@ Ziel | Umsetzung
 
 ### List
 
-<img src=".images/java_list.jpg" alt="Java List Grafik" width="400"/>
+<img src=".images/java_list.jpg" alt="Java List Grafik" width="600"/>
 
 Ziel | Umsetzung 
 |--|--|

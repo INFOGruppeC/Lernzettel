@@ -31,7 +31,7 @@ public static void insertionSort(int[] array) {
     }
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#insertion-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/Lineare-Datenstrukturen/sus/#insertion-sort)
 
 
 ### Selection Sort
@@ -50,7 +50,7 @@ public static void selectionSort(int[] array) {
     }
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#selection-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#selection-sort)
 
 ### Bubble Sort
 
@@ -67,7 +67,7 @@ public static void bubbleSort(int[] array) {
     }
 }
 ```
-[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus/README.md#bubble-sort)
+[Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus/README.md#bubble-sort)
 
 ### Quick Sort
 ```java

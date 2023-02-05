@@ -17,7 +17,7 @@ Abgedeckt sind die folgenden Themen:
 
 
 
- - [Automaten und Sprachen](./Autotmaten-und-Sprachen/)
+ - [Automaten und Sprachen](./Automaten-und-Sprachen/)
 
  - [Altlernzettel](./Altlernzettel/)
 

@@ -7,9 +7,14 @@ Dynamische, nichtlineare Datenstruktur, bei der jeder Knoten 0 bis 2 Nachfolger 
 Ein Baum ist entweder leer oder ein Knoten mit einem Inhalt und zwei Teilbäumen. Die Teilbäume sind wiederum Bäume. Die Wurzel eines Baums ist der Knoten ohne Vorgänger. Ein Blatt ist ein Knoten ohne Nachfolger. Ein Innenknoten ist ein Knoten mit Vorgänger und Nachfolger. 
 Durch die rekursive Definition kann ein Baum beliebig tief sein und bei der Suche wird immer nur ein Teilbaum betrachtet, da die anderen Teilbäume nicht mehr in Frage kommen.
 
-## Laufzeit:
-Die Laufzeit von Bäumen ist in der Regel $O(log(n))$ (durch die halbierende Suche).
+## Laufzeit
+Die Laufzeit von `Suchen`, `Einfügen` und `Entfernen` ist identisch.
 
+| Case | Laufzeit |
+|------|----------|
+| Best | $O(1)$   |
+| Worst | $O(n)$  |
+| Average | $O(log(n))$|
 
 ## Bezeichnungen
 
@@ -72,3 +77,42 @@ Die Traversierung wird verwendet, um den Inhalt des Baums zu durchlaufen. Die Re
 | Preorder | Wurzel, linker Teilbaum, rechter Teilbaum |
 | Inorder | Linker Teilbaum, Wurzel, rechter Teilbaum |
 | Postorder | Linker Teilbaum, rechter Teilbaum, Wurzel |
+
+### Implementation:
+
+#### Preorder:
+```java
+public void preorder(BinaryTree pTree) {
+    if (pTree != null) {
+        System.out.println(pTree.getContent());
+        preorder(pTree.getLeftTree());
+        preorder(pTree.getRightTree());
+    }
+}
+```
+
+#### Inorder:
+```java
+public void inorder(BinaryTree pTree) {
+    if (pTree != null) {
+        inorder(pTree.getLeftTree());
+        System.out.println(pTree.getContent());
+        inorder(pTree.getRightTree());
+    }
+}
+```
+
+#### Postorder:
+```java
+public void postorder(BinaryTree pTree) {
+    if (pTree != null) {
+        postorder(pTree.getLeftTree());
+        postorder(pTree.getRightTree());
+        System.out.println(pTree.getContent());
+    }
+}
+```
+
+
+
+BAUM IMMER NUR EIN SCHLÜSSEL

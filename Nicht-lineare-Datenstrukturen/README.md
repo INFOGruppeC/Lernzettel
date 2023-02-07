@@ -15,3 +15,7 @@ Der Auftrag entfernt den Knoten pVertex aus dem Graphen und löscht alle Kanten,
 ||`getVertex(String pID) => Vertex`
 ||`getVertices() => List <Vertex>`
 ||`getNeighbours(Vertex pVertex) = List <Vertex>`
+||
+||
+||
+||

@@ -37,4 +37,4 @@ Hier noch die offiziellen Dokumente zum Info LK Abi 2023:
 
 ## Liveshare Session
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?DC87C47904B9BB8D803C8912A9493DF592C9
+https://prod.liveshare.vsengsaas.visualstudio.com/join?B13A750CE59A71653B05F989B71B2F2953F7

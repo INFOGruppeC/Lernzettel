@@ -25,4 +25,4 @@ Abgedeckt sind die folgenden Themen:
 
  
 ## Liveshare Session
-https://prod.liveshare.vsengsaas.visualstudio.com/join?AD1A1085E7D7478725C6073506DA2546E09E
+https://prod.liveshare.vsengsaas.visualstudio.com/join?DC87C47904B9BB8D803C8912A9493DF592C9

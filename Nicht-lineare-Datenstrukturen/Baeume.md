@@ -36,7 +36,7 @@ Die Laufzeit von `Suchen`, `Einfügen` und `Entfernen` ist identisch.
 | Suchbaum | Ein Baum, in dem die Knoten nach einem bestimmten Kriterium sortiert sind (z.B. nach dem Inhalt) und durchsucht werden kann. |
 
 
-## Implementation:
+## Implementation BinaryTree:
 
 ### Erstellung:
 ```java
@@ -116,3 +116,4 @@ public void postorder(BinaryTree pTree) {
 
 
 BAUM IMMER NUR EIN SCHLÜSSEL
+# BinarySearchTree

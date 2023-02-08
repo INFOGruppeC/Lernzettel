@@ -6,6 +6,8 @@ Der Quellcode der unbearbeiteten Abiturklassen, und wie auf dem [Lernzettel nich
 - [](../Abiturklassen/BinarySearchTree.java)
 - [](../Abiturklassen/BinarySearchTree.java)
 
+## Graph
+
 |Erklärung|Implementation|
 |-|-|
 Der Auftrag fügt den Knoten pVertex vom Typ Vertex in den Graphen ein, sofern es noch keinen Knoten mit demselben ID-Eintrag wie pVertex im Graphen gibt und pVertex eine ID ungleich null hat. Ansonsten passiert nichts | `addVertex(Vertex pVertex)`

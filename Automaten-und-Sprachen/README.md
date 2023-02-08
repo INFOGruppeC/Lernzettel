@@ -9,6 +9,8 @@ Tabelle: Zeilen sind Zustände; Spalten die möglcihen Eingaben; Felder
 
 der Zustand, zu dem der Automat bei entsprechender Eingabe wechselt
 
+## NEA vs DEA 
+
 ## Akzeptor:
 `A` = (Ʃ, Q, F, S, σ)</br>
 `Ʃ` = {Eingabealphabet}</br>
@@ -44,6 +46,7 @@ Die Tabelle beschreibt dann den passenden DEA und könnte als Automat visualisie
 
 ## Definition Sprachen:
 Eine Sprache ist eine Menge von Wörtern bestehend aus Zeichen eines AlphabetsFormale Sprachen können nach Regeln aufgebaut sein, müssen aber nichtSie können durch Automaten, Grammatiken oder regulären –––Ausdrücken beschrieben werdenDer Betrag der Sprache ist die Anzahl aller Wörter innerhalb der SpracheSprachen können aus unendlich vielen Wörtern bestehenEine Sprache kann (links-, rechts-) regulär, kontextfrei, kontextsensitiv und rekursiv aufzählbar sein 
+
 ### Regulärer Ausdruck:
 L = { a^nb^n | n E IN, n > 0 } <br/>
 Grammatik:G = (N, T, S, P) <br/>
@@ -56,5 +59,4 @@ S = StartnichtterminalP ={<br>
 L(A) -> Sprache eines Automaten
 
 
-
- 
+## Ablaufdiagramm Nea und DEA

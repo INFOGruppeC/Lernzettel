@@ -1,7 +1,9 @@
 # [SuS](## "Suchen und Sortieren ") List
+
 Diese Liste ist sus :rat:
 
 ## Inhalt
+
 - [SuS List](#sus-list)
   - [Inhalt](#inhalt)
   - [Sortieren](#sortieren)
@@ -19,7 +21,7 @@ Diese Liste ist sus :rat:
 
 <details>
   <summary>Beispielimplementation anzeigen</summary>
-  
+
 
 ```java
 private List<Integer> insertionSort(List<Integer> list) {
@@ -28,7 +30,7 @@ private List<Integer> insertionSort(List<Integer> list) {
     {
         list.toFirst();
         helperList.toFirst();
-        
+
         if (helperList.isEmpty()) {
             helperList.insert(list.getContent());
             list.remove();
@@ -53,12 +55,12 @@ private List<Integer> insertionSort(List<Integer> list) {
     return helperList;
 }
 ```
+
 [Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#insertion-sort)
-                                                           
+
 </details>
 
 ### Selection Sort
-
 
 <details>
   <summary>Beispielimplementation anzeigen</summary>
@@ -94,13 +96,12 @@ private List<Integer> selectionSort(List<Integer> list) {
     return helperList;
 }
 ```
-  
+
 [Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#selection-sort)
 
 </details>
 
 ### Bubble Sort
-
 
 <details>
   <summary>Beispielimplementation anzeigen</summary>
@@ -136,12 +137,12 @@ private List<Integer> bubblesort(List<Integer> list) {
     return list;
 }
 ```
+
 [Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/Lineare-Datenstrukturen/blob/main/sus#bubble-sort)
 
 </details>
 
 ### Quick Sort
-
 
 <details>
   <summary>Beispielimplementation anzeigen</summary>
@@ -173,7 +174,7 @@ public List<Integer> quicksort(List<Integer> list) {
     return left;
 }
 ```
-  
+
 [Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus#quick-sort)
 
 </details>
@@ -181,6 +182,7 @@ public List<Integer> quicksort(List<Integer> list) {
 ## Suchen
 
 ### Lineare Suche
+
 ```java
 public int linearSearch(List<Integer> list, int search) {
     list.toFirst();
@@ -199,6 +201,7 @@ public int linearSearch(List<Integer> list, int search) {
 [Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus#lineare-suche)
 
 ### Binäre Suche
+
 ```java
 public int binarySearch(List<Integer> list, int search) {
     int left = 0;
@@ -234,4 +237,5 @@ private int getSize(List<Integer> list) {
     return size;
 }
 ```
+
 [Funktionsweise](https://github.com/INFOGruppeC/Lernzettel/blob/main/sus#binäre-suche)

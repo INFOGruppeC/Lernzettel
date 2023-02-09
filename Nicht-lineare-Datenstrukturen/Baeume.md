@@ -7,6 +7,8 @@ Dynamische, nichtlineare Datenstruktur, bei der jeder Knoten 0 bis 2 Nachfolger 
 Ein Baum ist entweder leer oder ein Knoten mit einem Inhalt und zwei Teilbäumen. Die Teilbäume sind wiederum Bäume. Die Wurzel eines Baums ist der Knoten ohne Vorgänger. Ein Blatt ist ein Knoten ohne Nachfolger. Ein Innenknoten ist ein Knoten mit Vorgänger und Nachfolger. 
 Durch die rekursive Definition kann ein Baum beliebig tief sein und bei der Suche wird immer nur ein Teilbaum betrachtet, da die anderen Teilbäume nicht mehr in Frage kommen.
 
+Der Inhalt eines Knotens sollte einzigartig sein.
+
 ## Laufzeit
 Die Laufzeit von `Suchen`, `Einfügen` und `Entfernen` ist identisch.
 
@@ -112,8 +114,3 @@ public void postorder(BinaryTree pTree) {
     }
 }
 ```
-
-
-
-BAUM IMMER NUR EIN SCHLÜSSEL
-# BinarySearchTree

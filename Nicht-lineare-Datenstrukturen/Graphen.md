@@ -113,12 +113,67 @@ Ein Weg, der jede Kante genau einmal enthält und desses Starknoten auch der End
 Vorraussetzung:
 Kein Knoten besitzt einen ungeraden Grad.
 
+## Java-Implementation
+
+```java
+public boolean isEulerianCircle(Graph graph) {
+    List<Vertex> vertices = graph.getVertices();
+    vertices.toFirst();
+    while (vertices.hasAccess()) {
+        Vertex vertex = vertices.getContent();
+        List<Vertex> neighbours = graph.getNeighbours(vertex);
+        int count = 0;
+        neighbours.toFirst();
+        while (neighbours.hasAccess()) {
+            count++;
+            neighbours.next();
+        }
+        if (count % 2 != 0) {
+            // No Eulerian Circle
+            return false;
+        }
+    }
+    // Eulerian Circle
+    return true;
+}
+```
+
 # Eulerweg
 
 Ein Weg, der jede Kante genau einmal enthält.
 
 Vorraussetzung:
 Genau 2 Knoten besitzten einen ungeraden Grad.
+
+## Java-Implementation
+
+```java
+public boolean isEulerianPath(Graph graph) {
+    List<Vertex> vertices = graph.getVertices();
+    vertices.toFirst();
+    int count = 0;
+    while (vertices.hasAccess()) {
+        Vertex vertex = vertices.getContent();
+        List<Vertex> neighbours = graph.getNeighbours(vertex);
+        int countNeighbours = 0;
+        neighbours.toFirst();
+        while (neighbours.hasAccess()) {
+            countNeighbours++;
+            neighbours.next();
+        }
+        if (countNeighbours % 2 != 0) {
+            count++;
+        }
+        vertices.next();
+    }
+    if (count == 2) {
+        // Eulerian Path
+        return true;
+    }
+    // No Eulerian Path
+    return false;
+}
+```
 
 ## Minimaler Spannbaum **(sollen hier noch Laufzeiten rein?)**
 

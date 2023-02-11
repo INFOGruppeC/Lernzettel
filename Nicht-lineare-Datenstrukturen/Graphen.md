@@ -5,8 +5,34 @@ zusammenhängend, gerichtet, ungerichtet, gewichtet, ungewichtet
 ## Graph
 
 ## Edge
+Eine Edge ist eine Verbindung zwischen zwei Knoten. Sie kann auch als Kante oder Verbindung bezeichnet werden.
+In der Abiturimplemtation ist diese Verbindung ungerichtet, d.h. die Kante kann in beide Richtungen verlaufen.
+Außerdem kann eine Kante markiert werden und hat eine Gewichtung.
+
+### Implementation
+
+```java
+Edge edge = new Edge(vertex1, vertex2, 42 /* Gewichtung */);
+edge.setMarked(false);
+edge.isMarked();
+edge.setWeight(42);
+edge.getWeight();
+edge.getVertices();
+```
 
 ## Vertex
+Ein Vertex ist ein Knoten eines Graphen. Er kann auch als Knotenpunkt oder Knoten bezeichnet werden.
+Jeder Vertex hat eine eindeutige ID, die als Schlüssel für den Vertex dient.
+Außerdem kann ein Vertex markiert werden.
+
+### Implementation
+
+```java
+Vertex vertex = new Vertex("Id meiner Träume");
+vertex.setMarked(false);
+vertex.isMarked();
+vertex.getId();
+```
 
 # Gerichtet vs ungerichtet
 

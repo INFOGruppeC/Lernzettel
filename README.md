@@ -23,7 +23,19 @@ Abgedeckt sind die folgenden Themen:
 
 - [Automaten und Sprachen](./Automaten-und-Sprachen/)
 
+- [Objektorientierte Programmierung und Modellierung](./Objektorientierte-Modellierung-und-Programmierung/)
+  - [Objekte und Klassen](./Objektorientierte-Modellierung-und-Programmierung/Objekte-und-Klassen.md)
+    - Attribute
+    - Methoden
+    - Bezugsobjekte
+      - Deklarieren
+      - Initialisieren
+  - [Entwurfsdiagramme und Implementationsdiagramme](./Objektorientierte-Modellierung-und-Programmierung/Entwurfsdiagramme-und-Implementationsdiagramme.md)
+  - [Struktogramme](./Objektorientierte-Modellierung-und-Programmierung/Struktogramme.md)
+  - [Vererbung](./Objektorientierte-Modellierung-und-Programmierung/Vererbung.md)
+
 - [Altlernzettel](./Altlernzettel/)
+
 
 Hier noch die offiziellen Dokumente zum Info LK Abi 2023:
 

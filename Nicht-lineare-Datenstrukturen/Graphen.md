@@ -65,10 +65,13 @@ vertex.isMarked();
 vertex.getId();
 ```
 
-# Gerichtet vs ungerichtet
 
 Adjazenzmatrix, Adjazenzliste
 Tiefensuche, Breitensuche
+
+# Tiefensuche
+
+# Breitensuche 
 
 # Backtracking
 

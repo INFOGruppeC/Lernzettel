@@ -16,7 +16,11 @@ Die anzahl an Zeichen bzw. die Länge des Wortes wird dabei durch Betragsstriche
 Eine Sprache `L` ist eine Menge von Wörtern bestehend aus Zeichen eines Alphabets `Ʃ`. Formale Sprachen können nach Regeln aufgebaut sein, müssen aber nicht. Sie können durch Automaten, Grammatiken oder reguläre Ausdrücken beschrieben werden. Der Betrag der Sprache ist die Anzahl aller Wörter innerhalb der Sprache. Sprachen können aus unendlich vielen Wörtern bestehen. Eine Sprache kann (links-, rechts-) regulär, kontextfrei, kontextsensitiv und rekursiv aufzählbar sein 
 
 ### Regulärer Ausdruck:
+
 L = { a^nb^n | n E IN, n > 0 } <br/>
+
+
+## Grammatiken
 
 Grammatik:G = (N, T, S, P) <br/>
 N = {Nichtterminale (in Großbuchstaben)}<br/>
@@ -29,7 +33,6 @@ L(A) -> Sprache eines Automaten
 
 
 
-## Grammatiken
 
 ## Chomsky Hierarchie  
 

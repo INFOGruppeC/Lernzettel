@@ -114,3 +114,31 @@ public void postorder(BinaryTree pTree) {
     }
 }
 ```
+
+## Generieren eines optimalen Binary Search Trees:
+Ein optimaler Binary Search Tree ist ein Baum, in dem die Summe der Tiefe aller Knoten minimal ist. Dies ist der Fall, wenn die Knoten nach dem Inhalt sortiert sind. Die Tiefe eines Knotens ist die Anzahl der gerichteten Kanten bis zur Wurzel. Die Summe der Tiefe aller Knoten ist die Summe der Tiefe aller Blätter.
+
+### Beispiel:
+![Beispiel Baum](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sorted_binary_tree.svg/300px-Sorted_binary_tree.svg.png)
+
+Die Summe der Tiefe aller Knoten ist 1 + 2 + 3 + 4 + 5 = 15. Dies ist die kleinste Summe, die erreicht werden kann.
+
+### Implementation:
+```java
+public BinaryTree<String> generateOptimalBST(String[] pContent) {
+    return generateOptimalBST(pContent, 0, pContent.length - 1);
+}
+
+private BinaryTree<String> generateOptimalBST(String[] pContent, int pStart, int pEnd) {
+    if (pStart > pEnd) {
+        return null;
+    }
+    int middle = (pStart + pEnd) / 2;
+    BinaryTree<String> tree = new BinaryTree<String>(pContent[middle]);
+    tree.setLeftTree(generateOptimalBST(pContent, pStart, middle - 1));
+    tree.setRightTree(generateOptimalBST(pContent, middle + 1, pEnd));
+    return tree;
+}
+```
+Erklärung:
+Die Methode `generateOptimalBST` ruft sich selbst rekursiv auf, bis der Start- und Endindex gleich sind. Dann wird ein neuer Baum mit dem Inhalt des Arrays an der Stelle `middle` erstellt. Der linke Teilbaum wird mit dem Inhalt des Arrays von `pStart` bis `middle - 1` erstellt und der rechte Teilbaum mit dem Inhalt des Arrays von `middle + 1` bis `pEnd`. Dies wird solange wiederholt, bis der Start- und Endindex gleich sind. Dann wird der Baum zurückgegeben.

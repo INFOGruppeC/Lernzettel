@@ -49,7 +49,62 @@ Algorithmus zum ermitteln des kürzesten Weges von einem gegebenen Startknoten z
 
 # Hammiltonkreis
 
+Ein geschlossener Weg, der jeden Knoten genau einmal enthält. Er benötigt mindestens 3 Knoten, da sonst ein Kreis nicht möglich ist.
+
+## Java-Implementation
+
+```java
+public boolean isHamiltonnianCircle(Graph graph) {
+    List<Vertex> vertices = graph.getVertices();
+    vertices.toFirst();
+    while (vertices.hasAccess()) {
+        Vertex vertex = vertices.getContent();
+        List<Vertex> neighbours = graph.getNeighbours(vertex);
+        int count = 0;
+        neighbours.toFirst();
+        while (neighbours.hasAccess()) {
+            count++;
+            neighbours.next();
+        }
+        if (count != 2) {
+            // No Hamiltonnian Circle
+            return false;
+        }
+    }
+    // Hamiltonnian Circle
+    return true;
+}
+```
+
 # Hammiltonweg
+
+Ein Weg, der jeden Knoten genau einmal enthält. Er benötigt mindestens 2 Knoten, da sonst ein Weg nicht möglich ist.
+
+## Java-Implementation
+
+```java
+public boolean isHamiltonnianPath(Graph graph) {
+    List<Vertex> vertices = graph.getVertices();
+    vertices.toFirst();
+    while (vertices.hasAccess()) {
+        Vertex vertex = vertices.getContent();
+        List<Vertex> neighbours = graph.getNeighbours(vertex);
+        int count = 0;
+        neighbours.toFirst();
+        while (neighbours.hasAccess()) {
+            count++;
+            neighbours.next();
+        }
+        if (count != 1 && count != 2) {
+            // No Hamiltonnian Path
+            return false;
+        }
+    }
+    // Hamiltonnian Path
+    return true;
+}
+```
+
 
 # Eulerkreis
 

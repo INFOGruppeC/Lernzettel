@@ -24,3 +24,39 @@ Object
 
 > **Hinweis**
 > Bei der Vererbungshierarchie in Java ist die Klasse `Object` immer die Superklasse von allen Klassen. Sie ist die Wurzel der Baumstruktur. Sie muss nicht explizit in der Vererbungshierarchie dargestellt sein.
+
+## Implementierung von Vererbung
+
+### Deklaration einer Subklasse
+
+```java
+public class Cat extends Animal {
+}
+```
+
+Die Klasse `Cat` erbt von der Klasse `Animal`. Die Klasse `Cat` ist eine Subklasse. Die Klasse `Animal` ist eine Superklasse.
+
+### Vererbung von Attributen
+
+```java
+public class Animal {
+    private String name;
+}
+```
+
+```java
+public class Cat extends Animal {
+}
+```
+
+Die Klasse `Cat` erbt das Attribut `name` von der Klasse `Animal`.
+
+Es kann nun verwendet werden:
+
+```java
+public class Cat extends Animal {
+    public void printName() {
+        System.out.println(name);
+    }
+}
+```

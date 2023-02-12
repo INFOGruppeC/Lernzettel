@@ -4,11 +4,11 @@ zusammenhängend, gerichtet, ungerichtet, gewichtet, ungewichtet
 
 ## Graph
 
-Ein Graph ist eine nicht lineare Datenstruktur,  nicht-hierarchische Datenstruktur. 
+Ein Graph ist eine nicht lineare Datenstruktur, nicht-hierarchische Datenstruktur. 
 Ein Graph besteht grundlegend aus Knoten und Kanten. Besitzten alle Kanten des Graphen mindestens einen Wert oder auch fachsprachlich eine Gewichtung,so handelt es sich um einen gewichteten Graphen. Graphen werden meist genutzt um in der Realität bestehende Infrastrukturen, wie Verkehrs-, Strom-, oder Internnetzte darzustellen und zu analyisieren (hinsichtlich redundanz, effizienz, ...). Eine Kante kann zwei Knoten auch nur in eine Richtung verbinden, in diesem Fall handelt es sich um eine gerichtete Kante. Besteht ein Graph ausschliesslich aus gerichteten Kanten, so handelt es sich bei dem Graphen um einene gerichteten Graphen. 
 
 ### Weg 
-Einen Weg in einem Graphen gibt man als Folge der dabei durchlaufenen Knoten an.Endet ein Weg an demselben Knoten, an dem er begonnen hat, so spricht man von einem Rundweg (Zyklus). Besitzt ein Graph mindestens einen Zyklus, so spricht man von einem zyklischen Graphen.
+Einen Weg in einem Graphen gibt man als Folge der dabei durchlaufenen Knoten an. Endet ein Weg an demselben Knoten, an dem er begonnen hat, so spricht man von einem Rundweg (Zyklus). Besitzt ein Graph mindestens einen Zyklus, so spricht man von einem zyklischen Graphen.
 
 ### Zusammenhängende Graphen 
 
@@ -18,22 +18,6 @@ so nennt man diesen Graph einen zusammenhängenden Graphen.
 ### Vollständigkeit 
 
 Ein vollständiger Graph hat von jedem Knoten zu jedem anderen Knoten eine direkte Kante. Ist ein Graph fast vollständig, so bezeichnet man ihn als dichten Graph. Ist ein Graph weit davon entfernt, vollständig zu sein, so bezeichnet man ihn als dünnen Graph.
-
-
-
-|Erklärung|Implementation|
-|-|-|
-Der Auftrag fügt den Knoten pVertex vom Typ Vertex in den Graphen ein, sofern es noch keinen Knoten mit demselben ID-Eintrag wie pVertex im Graphen gibt und pVertex eine ID ungleich null hat. Ansonsten passiert nichts | `addVertex(Vertex pVertex)`
-|Der Auftrag fügt die Kante pEdge in den Graphen ein, sofern beide durch die Kante verbundenen Knoten im Graphen enthalten sind, nicht identisch sind und noch keine Kante zwischen den beiden Knoten existiert. Ansonsten passiert nichts.|`addEdge(Edge pEdge)`
-Der Auftrag entfernt den Knoten pVertex aus dem Graphen und löscht alle Kanten, die mit ihm inzident sind. Ist der Knoten pVertex nicht im Graphen enthalten, passiert nichts. | `removeVertex(Vertex pVertex)`
-||`removeEdge(Edge pEdge)`
-||`getVertex(String pID) => Vertex`
-||`getVertices() => List <Vertex>`
-||`getNeighbours(Vertex pVertex) = List <Vertex>`
-||
-||
-||
-||
 
 ## Edge
 Eine Edge ist eine Verbindung zwischen zwei Knoten. Sie kann auch als Kante oder Verbindung bezeichnet werden.
@@ -65,9 +49,23 @@ vertex.isMarked();
 vertex.getId();
 ```
 
+## Abiturklasse Graph
 
-Adjazenzmatrix, Adjazenzliste
-Tiefensuche, Breitensuche
+|Erklärung|Implementation|
+|-|-|
+Der Auftrag fügt den Knoten pVertex vom Typ Vertex in den Graphen ein, sofern es noch keinen Knoten mit demselben ID-Eintrag wie pVertex im Graphen gibt und pVertex eine ID ungleich null hat. Ansonsten passiert nichts | `addVertex(Vertex pVertex)`
+|Der Auftrag fügt die Kante pEdge in den Graphen ein, sofern beide durch die Kante verbundenen Knoten im Graphen enthalten sind, nicht identisch sind und noch keine Kante zwischen den beiden Knoten existiert. Ansonsten passiert nichts.|`addEdge(Edge pEdge)`
+Der Auftrag entfernt den Knoten pVertex aus dem Graphen und löscht alle Kanten, die mit ihm inzident sind. Ist der Knoten pVertex nicht im Graphen enthalten, passiert nichts. | `removeVertex(Vertex pVertex)`
+||`removeEdge(Edge pEdge)`
+||`getVertex(String pID) => Vertex`
+||`getVertices() => List <Vertex>`
+||`getNeighbours(Vertex pVertex) = List <Vertex>`
+||
+||
+||
+||
+
+# TODO: Adjazenzmatrix, Adjazenzliste
 
 # Tiefensuche
 
@@ -81,7 +79,7 @@ Eleminieren aller Möglichkeiten, die nicht zu dem gewünschten Ziel führen kö
 
 Algorithmus zum ermitteln des kürzesten Weges von einem gegebenen Startknoten zu einem Endknoten. ACHTUNG auch wieder ein greedy-algorithmus, der nicht die global beste Lösung liefert.
 
-# Hammiltonkreis
+# Hamiltonkreis
 
 Ein geschlossener Weg, der jeden Knoten genau einmal enthält. Er benötigt mindestens 3 Knoten, da sonst ein Kreis nicht möglich ist.
 
@@ -110,7 +108,7 @@ public boolean isHamiltonnianCircle(Graph graph) {
 }
 ```
 
-# Hammiltonweg
+# Hamiltonweg
 
 Ein Weg, der jeden Knoten genau einmal enthält. Er benötigt mindestens 2 Knoten, da sonst ein Weg nicht möglich ist.
 
@@ -239,4 +237,8 @@ Teilgraph eines Graphen, der mindestens nötig ist, um alle Knoten möglichst ko
 
 ## Probleme mit Greedy-Algorithmen
 
-Dijkstra, Kruskal und Prim sind Algorithmen, die nicht in der Lage sind, die global beste Lösung zu finden (heuristische Lösung). Sie finden immer nur die aktuell beste Lösung. Ein Beispiel dafür ist das [Travelling Salesman Problem](https://de.wikipedia.org/wiki/Problem_des_Handlungsreisenden).
+Ein Greedy-Algorithmus ist eine spezielle Art von Algorithmus, bei dem in jedem Schritt die Entscheidung getroffen wird, die auf den ersten Blick am besten erscheint. Es wird keine Rücksicht auf die späteren Auswirkungen dieser Entscheidung genommen / es fehlt der Überblick über den gesamten Kontext. 
+
+Algorithmen dieser Art arbeiten Schritt für Schritt, indem sie in jedem Schritt das beste verfügbare Ergebnis wählen, um eine optimale Lösung zu erreichen.
+
+Ein Beispiel dafür ist das [Travelling Salesman Problem](https://de.wikipedia.org/wiki/Problem_des_Handlungsreisenden).

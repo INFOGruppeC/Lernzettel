@@ -7,7 +7,7 @@ Ein Alphabet `Ʃ` ist eine endliche, nicht leere Menge and Zeichen (z.B. Buchsta
 ## Definition Wort
 
 Eine Aneinanderreihung von n > 0 Zeichen eines Alphabets
-Die anzahl an Zeichen bzw. die Länge des Wortes wird dabei durch Betragsstriche gekennzeichnet
+Die Anzahl an Zeichen bzw. die Länge des Wortes wird dabei durch Betragsstriche gekennzeichnet
 (Ausnahme `|ɛ| = 0` )
 
 ## Definition Sprachen
@@ -16,7 +16,7 @@ Eine Sprache `L` ist eine Menge von Wörtern bestehend aus Zeichen eines Alphabe
 
 ### Regulärer Ausdruck:
 
-L = { a^nb^n | n E IN, n > 0 } <br/>
+L = { a^nb^n | n E IN, n > 0 }
 
 ## Grammatiken
 

@@ -21,7 +21,7 @@ Abgedeckt sind die folgenden Themen:
 
 - [Datenbanken](./Datenbanken/)
 
-- [Automaten und Sprachen](./Automaten-und-Sprachen/)
+- [Automaten und formale Sprachen](./Automaten-und-Sprachen/)
 
 - [Objektorientierte Programmierung und Modellierung](./Objektorientierte-Modellierung-und-Programmierung/)
   - [Objekte und Klassen](./Objektorientierte-Modellierung-und-Programmierung/Objekte-und-Klassen.md)

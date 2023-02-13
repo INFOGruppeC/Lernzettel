@@ -15,7 +15,7 @@ Die Laufzeit von `Suchen`, `Einfügen` und `Entfernen` ist identisch.
 | Case | Laufzeit |
 |------|----------|
 | Best | $O(1)$   |
-| Worst | $O(n)$  |
+| Worst | $O(log(n))$  |
 | Average | $O(log(n))$|
 
 ## Bezeichnungen

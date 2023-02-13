@@ -9,6 +9,10 @@ Durch die rekursive Definition kann ein Baum beliebig tief sein und bei der Such
 
 Der Inhalt eines Knotens sollte einzigartig sein.
 
+## Unterschied Suchbaum und Binärbaum:
+Ein Suchbaum ist sortiert, dies geschieht durch eine insert Methode die bei der Wurzel aufgerufen wird. Diese Methode sortiert den Inhalt automatisch an die Korrekte Stelle im Baum. Beim Binärbaum muss per setContent bzw. setLeftTree und setRightTree von Hand der Inhalt eingefügt werden.
+Ebenfalls übernimmt der BinarySearchTree das löschen, da er die richtige Stelle im Baum suchen kann und den nachfolgenden Teilbaum an die richtige Stelle verschiebt. Beim Binärbaum muss erneut per setContent bzw. setLeftTree und setRightTree von Hand der Inhalt auf null gesetzt werden und der Teilbaum muss manuell an die richtige Stelle verschoben werden.
+
 ## Laufzeit
 Die Laufzeit von `Suchen`, `Einfügen` und `Entfernen` ist identisch.
 
@@ -57,14 +61,27 @@ BinaryTree<String> baum = new BinaryTree<String>();
 ```
 Enthält keinen Inhalt und keine Teilbäume
 
-### Methoden:
+### Methoden BinarySearchTree:
 | Methode | Beschreibung |
 |---------|--------------|
 | `insert(Content pContent)` | Fügt einen neuen Knoten mit dem Inhalt pContent in den Baum ein |
 | `remove(Content pContent)` | Entfernt den Knoten mit dem Inhalt pContent aus dem Baum |
-| `search(Content pContent)` | Sucht den Knoten mit dem Inhalt pContent im Baum (nur beim Suchbaum) |
+| `search(Content pContent)` | Sucht den Knoten mit dem Inhalt pContent im Baum|
 | `getLeftTree()` | Gibt den linken Teilbaum zurück |
 | `getRightTree()` | Gibt den rechten Teilbaum zurück |
+| `getContent()` | Gibt den Inhalt des Knotens zurück |
+| `isEmpty()` | Gibt zurück, ob der Baum leer ist |
+
+### Methoden BinaryTree:
+| Methode | Beschreibung |
+|---------|--------------|
+| `setLeftTree(BinaryTree pLeftTree)` | Setzt den linken Teilbaum auf pLeftTree |
+| `setRightTree(BinaryTree pRightTree)` | Setzt den rechten Teilbaum auf pRightTree |
+| `setContent(Content pContent)` | Setzt den Inhalt des Knotens auf pContent |
+| `isEmpty()` | Gibt zurück, ob der Baum leer ist |
+| `getLeftTree()` | Gibt den linken Teilbaum zurück |
+| `getRightTree()` | Gibt den rechten Teilbaum zurück |
+| `getContent()` | Gibt den Inhalt des Knotens zurück |
 
 
 ## Traversierung:

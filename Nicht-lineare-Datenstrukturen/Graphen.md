@@ -69,7 +69,11 @@ Der Auftrag entfernt den Knoten pVertex aus dem Graphen und löscht alle Kanten,
 
 # Tiefensuche
 
+<img src="./.images/tiefensuche.gif" alt="Tiefensuche GIF Animation" width="300"/>
+
 # Breitensuche 
+
+<img src="./.images/breitensuche.gif" alt="Breitensuche GIF Animation" width="300"/>
 
 # Backtracking
 

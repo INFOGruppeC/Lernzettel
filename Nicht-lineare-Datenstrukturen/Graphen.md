@@ -238,12 +238,12 @@ public boolean isEulerianPath(Graph graph) {
 }
 ```
 
-## Minimaler Spannbaum **(sollen hier noch Laufzeiten rein?)**
+# Minimaler Spannbaum
 
 Teilgraph eines Graphen, der mindestens nötig ist, um alle Knoten möglichst kostengünstig zu verbinden. Zur Berechnung eines minimalen Spannbaums eines zusammenhängenden, gewichteten Graphen gibt es zwei Algorithmen: Kruskal und Prim.<br>
 **WICHTIG**: Die Algorithmen bestimmen nur die aktuell beste Möglichkeit, nicht aber die global beste Lösung ([Greedy-Algorithmen](#probleme-mit-greedy-algorithmen)).
 
-### Kruskal
+## Kruskal
 
 1. Kanten aufsteigend (nach Gewicht) sortieren
 2. Kanten einem neuen Graphen schrittweise (beginnend mit der geringsten Gewichtung) hinzufügen
@@ -254,7 +254,7 @@ Teilgraph eines Graphen, der mindestens nötig ist, um alle Knoten möglichst ko
 
 (MST: Minimal Spanning Tree | [Quelle](https://www.thealgorist.com/Algo/GraphTheory/Kruskal))
 
-### Prim
+## Prim
 
 1. Einen beliebigen Knoten auswählen
 2. Alle Kanten des Knotens einer Liste hinzufügen

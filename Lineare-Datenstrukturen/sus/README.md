@@ -109,11 +109,13 @@ Jeden Durchlauf werden die benachbarten Werte verglichen und falls das Element h
 - Bei fast richtig sortierten Datensätzen wird bestenfalls nur ein Durchlauf benötigt => guter best case
 - Einfache Implementation 
 - Einfaches Grundprinzip
+- Best Case: $O(n)$
 
 #### Nachteile 
 
 - Bei einem Datensatzt, der genau "falschrum" sortiert ist wird eine hohe anzahl an vergleichen benötigt => schlechter worstcase
 - => schlecht Abschätzbar (geringe Stablilität)
+- Worst case: $O(n^2)$
 
 ### Quick Sort
 

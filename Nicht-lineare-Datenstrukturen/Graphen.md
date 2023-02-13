@@ -4,22 +4,24 @@ zusammenhängend, gerichtet, ungerichtet, gewichtet, ungewichtet
 
 ## Graph
 
-Ein Graph ist eine nicht lineare Datenstruktur, nicht-hierarchische Datenstruktur. 
-Ein Graph besteht grundlegend aus Knoten und Kanten. Besitzten alle Kanten des Graphen mindestens einen Wert oder auch fachsprachlich eine Gewichtung,so handelt es sich um einen gewichteten Graphen. Graphen werden meist genutzt um in der Realität bestehende Infrastrukturen, wie Verkehrs-, Strom-, oder Internnetzte darzustellen und zu analyisieren (hinsichtlich redundanz, effizienz, ...). Eine Kante kann zwei Knoten auch nur in eine Richtung verbinden, in diesem Fall handelt es sich um eine gerichtete Kante. Besteht ein Graph ausschliesslich aus gerichteten Kanten, so handelt es sich bei dem Graphen um einene gerichteten Graphen. 
+Ein Graph ist eine nicht lineare Datenstruktur, nicht-hierarchische Datenstruktur.
+Ein Graph besteht grundlegend aus Knoten und Kanten. Besitzten alle Kanten des Graphen mindestens einen Wert oder auch fachsprachlich eine Gewichtung,so handelt es sich um einen gewichteten Graphen. Graphen werden meist genutzt um in der Realität bestehende Infrastrukturen, wie Verkehrs-, Strom-, oder Internnetzte darzustellen und zu analyisieren (hinsichtlich redundanz, effizienz, ...). Eine Kante kann zwei Knoten auch nur in eine Richtung verbinden, in diesem Fall handelt es sich um eine gerichtete Kante. Besteht ein Graph ausschliesslich aus gerichteten Kanten, so handelt es sich bei dem Graphen um einene gerichteten Graphen.
 
-### Weg 
+### Weg
+
 Einen Weg in einem Graphen gibt man als Folge der dabei durchlaufenen Knoten an. Endet ein Weg an demselben Knoten, an dem er begonnen hat, so spricht man von einem Rundweg (Zyklus). Besitzt ein Graph mindestens einen Zyklus, so spricht man von einem zyklischen Graphen.
 
-### Zusammenhängende Graphen 
+### Zusammenhängende Graphen
 
 Kann man von jedem Knoten aus jeden anderen Knoten über einen Weg erreichen,
 so nennt man diesen Graph einen zusammenhängenden Graphen.
 
-### Vollständigkeit 
+### Vollständigkeit
 
 Ein vollständiger Graph hat von jedem Knoten zu jedem anderen Knoten eine direkte Kante. Ist ein Graph fast vollständig, so bezeichnet man ihn als dichten Graph. Ist ein Graph weit davon entfernt, vollständig zu sein, so bezeichnet man ihn als dünnen Graph.
 
 ## Edge
+
 Eine Edge ist eine Verbindung zwischen zwei Knoten. Sie kann auch als Kante oder Verbindung bezeichnet werden.
 In der Abiturimplemtation ist diese Verbindung ungerichtet, d.h. die Kante kann in beide Richtungen verlaufen.
 Außerdem kann eine Kante markiert werden und hat eine Gewichtung.
@@ -36,6 +38,7 @@ edge.getVertices();
 ```
 
 ## Vertex
+
 Ein Vertex ist ein Knoten eines Graphen. Er kann auch als Knotenpunkt oder Knoten bezeichnet werden.
 Jeder Vertex hat eine eindeutige ID, die als Schlüssel für den Vertex dient.
 Außerdem kann ein Vertex markiert werden.
@@ -51,35 +54,60 @@ vertex.getId();
 
 ## Abiturklasse Graph
 
-|Erklärung|Implementation|
-|-|-|
-Der Auftrag fügt den Knoten pVertex vom Typ Vertex in den Graphen ein, sofern es noch keinen Knoten mit demselben ID-Eintrag wie pVertex im Graphen gibt und pVertex eine ID ungleich null hat. Ansonsten passiert nichts | `addVertex(Vertex pVertex)`
-|Der Auftrag fügt die Kante pEdge in den Graphen ein, sofern beide durch die Kante verbundenen Knoten im Graphen enthalten sind, nicht identisch sind und noch keine Kante zwischen den beiden Knoten existiert. Ansonsten passiert nichts.|`addEdge(Edge pEdge)`
-Der Auftrag entfernt den Knoten pVertex aus dem Graphen und löscht alle Kanten, die mit ihm inzident sind. Ist der Knoten pVertex nicht im Graphen enthalten, passiert nichts. | `removeVertex(Vertex pVertex)`
-||`removeEdge(Edge pEdge)`
-||`getVertex(String pID) => Vertex`
-||`getVertices() => List <Vertex>`
-||`getNeighbours(Vertex pVertex) = List <Vertex>`
+| Erklärung | Implementation |
+| --------- | -------------- |
+| Der Auftrag fügt den Knoten pVertex vom Typ Vertex in den Graphen ein, sofern es noch keinen Knoten mit demselben ID-Eintrag wie pVertex im Graphen gibt und pVertex eine ID ungleich null hat. Ansonsten passiert nichts| `addVertex(Vertex pVertex)`|
+| Der Auftrag fügt die Kante pEdge in den Graphen ein, sofern beide durch die Kante verbundenen Knoten im Graphen enthalten sind, nicht identisch sind und noch keine Kante zwischen den beiden Knoten existiert. Ansonsten passiert nichts. | `addEdge(Edge pEdge)`|
+| Der Auftrag entfernt den Knoten pVertex aus dem Graphen und löscht alle Kanten, die mit ihm inzident sind. Ist der Knoten pVertex nicht im Graphen enthalten, passiert nichts.| `removeVertex(Vertex pVertex)`|
+|| `removeEdge(Edge pEdge)` |
+|| `getVertex(String pID) => Vertex` |
+|| `getVertices() => List <Vertex>` |
+|| `getNeighbours(Vertex pVertex) = List <Vertex>` |
 ||
 ||
 ||
 ||
 
-# TODO: Adjazenzmatrix, Adjazenzliste
+# Adjazenzmatritzen und Adjazenzlisten
+
+## Adjazenzmatrix
+
+Adjazenzmatritzen und -listen sind Darstellungsformen für Kanten zwischen Knoten. `Adjazenz = Nachbarschaft`
+
+Die Matrix entspricht hier einer Tabellenform mit den Knoten als Zeilen und Spalten wo die Gewichtung der Kante im entsprechenden Feld eingetragen wird.<br>
+Bei einem ungerichteten Graphen gilt:
+
+- Eine 0 bedeutet, es existiert keine Kante, eine 1 das Gegenteil. Ist der Graph gewichtet, wird dort das jeweilige Kantengewicht eingetragen
+- Die Einträge müssen symmetrisch sein, da Verbindungen in beide Richtungen möglich sind.
+
+Bei einem gerichteten Graphen:
+
+- ...wird die Matrix wie folgt gelesen: Der Knoten in der Zeile hat eine Kante zum Knoten in der Spalte
+  > Im Beispiel unten hat Knoten A also eine gerichtete Kante mit dem Gewicht x zu Knoten B, B hat aber keine Kante zu A (daher 0)
+
+<img src="./.images/adjazenzmatrix.png" alt="Adjazenzmatrix Beispiel von Studyflix" width="600"/>
+
+## Adjazenzliste
+
+Die Liste entspricht einer Liste von Knoten, die jeweils eine Liste von Nachbarknoten enthält. (Sehr simpel, schnell unübersichtlich, besonders bei ungerichteten Graphen, da dort jeder Knoten doppelt auftaucht)
+
+<img src="./.images/adjazenzliste.png" alt="Adjazenzliste Beispiel von Studyflix" width="600"/>
 
 # Tiefensuche
 
 <img src="./.images/tiefensuche.gif" alt="Tiefensuche GIF Animation" width="300"/>
 
-# Breitensuche 
+# Breitensuche
 
 <img src="./.images/breitensuche.gif" alt="Breitensuche GIF Animation" width="300"/>
 
-# Backtracking
+# Dijkstra
+
+## Backtracking
 
 Eleminieren aller Möglichkeiten, die nicht zu dem gewünschten Ziel führen können, um so die Laufzeit zu verringern (Dijkstra: das ausschliessen von Wegen, zu einem Übergangsknoten, zu dem bereits ein kürzerer Weg führt)
 
-# Dijkstra
+## Dijkstra erklärt
 
 Algorithmus zum ermitteln des kürzesten Weges von einem gegebenen Startknoten zu einem Endknoten. ACHTUNG auch wieder ein greedy-algorithmus, der nicht die global beste Lösung liefert.
 
@@ -140,7 +168,6 @@ public boolean isHamiltonnianPath(Graph graph) {
     return true;
 }
 ```
-
 
 # Eulerkreis
 
@@ -221,7 +248,7 @@ Teilgraph eines Graphen, der mindestens nötig ist, um alle Knoten möglichst ko
 1. Kanten aufsteigend (nach Gewicht) sortieren
 2. Kanten einem neuen Graphen schrittweise (beginnend mit der geringsten Gewichtung) hinzufügen
 3. Entsteht durch das Einfügen ein Kreis, wird die Kante nicht hinzugefügt.
-> Der Algorithmus kann theoretisch abbrechen, sobald alle Knoten mit mindestens einer Kante verbunden sind. Läuft er weiter, wird er aber keine Kanten mehr hinzufügen, da dadurch ein Kreis entstehen würde.
+   > Der Algorithmus kann theoretisch abbrechen, sobald alle Knoten mit mindestens einer Kante verbunden sind. Läuft er weiter, wird er aber keine Kanten mehr hinzufügen, da dadurch ein Kreis entstehen würde.
 
 <img src="./.images/kruskal.gif" alt="Kruskal Algorithmus GIF Animation" width="600"/>
 
@@ -241,7 +268,7 @@ Teilgraph eines Graphen, der mindestens nötig ist, um alle Knoten möglichst ko
 
 ## Probleme mit Greedy-Algorithmen
 
-Ein Greedy-Algorithmus ist eine spezielle Art von Algorithmus, bei dem in jedem Schritt die Entscheidung getroffen wird, die auf den ersten Blick am besten erscheint. Es wird keine Rücksicht auf die späteren Auswirkungen dieser Entscheidung genommen / es fehlt der Überblick über den gesamten Kontext. 
+Ein Greedy-Algorithmus ist eine spezielle Art von Algorithmus, bei dem in jedem Schritt die Entscheidung getroffen wird, die auf den ersten Blick am besten erscheint. Es wird keine Rücksicht auf die späteren Auswirkungen dieser Entscheidung genommen / es fehlt der Überblick über den gesamten Kontext.
 
 Algorithmen dieser Art arbeiten Schritt für Schritt, indem sie in jedem Schritt das beste verfügbare Ergebnis wählen, um eine optimale Lösung zu erreichen.
 

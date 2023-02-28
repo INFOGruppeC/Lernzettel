@@ -80,7 +80,7 @@ Dazu wird das Element mit dem letzten Element der sortierten Liste verglichen. F
 
 ### Selection Sort
 
-<img src="../.images/selection_sort.jpg" alt="Selection Sort Grafik" width="400"/>
+<img src="../.images/selection_sort.png" alt="Selection Sort Grafik" width="350"/>
 
 #### Funktionsweise:
 

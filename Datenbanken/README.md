@@ -1,41 +1,81 @@
 # Datenbanken
 
+Datenbanken dienen der **elektronischen Datenverwaltung**. In einer Datenbank werden Datensätze zusammengefasst. Dazu werden Datenbankmanagementsysteme (DBMS) wie SQL benutzt.
+
+<img src="./.images/tabelle.jpg" alt="Sample Table" width="600"/>
+
+### Begriffe
+
+- **Entität** - Zeile im Datensatz
+  - **Attribut** - Beschreibt eine Eigenschaft
+    - **Felddatentyp** - Text, Zahl, Wahrheitswert, Autowert etc.
+- **Spalte** - Datenfeld
+- **Tabelle** - Relation (Zusammenfassung gleichartiger Entitäten)
+- **Redundanzen** - Doppelungen
+- **Datenanomalien** - Datenunregelmäßigkeiten
+- **Schlüssel**
+  - **Primärschlüssel** - Dient der eindeutigen Identifizierung einer Entität
+  - **Sekundärschlüssel** - Auch Fremdschlüssel genannt; Attribut in einer Tabelle, das in einer Entität, zu der eine Beziehung besteht, als Primärschlüssel definiert wurde.
+- **Kardinalität** - Anzahl der an einer Beziehung beteilitgen Entitäten (Beziehungsmenge)
+- [**Normalisierung**](#normalformen)
+
 ## ER-Diagramm
+
+<img src="./.images/er.jpg" alt="Sample Entity Relationship Diagram" width="500"/>
 
 Das Entity-Relationship-Diagramm dient dem Modellieren von Datenbanken. Es besteht aus drei Elementen: Entitäten, Beziehungen und Attributen. Entitäten sind Objekte, die in der Datenbank gespeichert werden. Beziehungen sind die Verbindungen zwischen den Entitäten. Attribute sind Eigenschaften der Entitäten.
 Zum Beispiel kann eine Entität `Person` sein und eine Beziehung zwischen der Entität `Person` und der Entität `Adresse` bestehen. Die Entität `Adresse` hat die Attribute `Straße`, `Hausnummer`, `PLZ` und `Stadt`. Die Entität `Person` hat die Attribute `Vorname`, `Nachname` und `Alter`. Die Beziehung zwischen Person und Adresse ist eine 1:n-Beziehung, da eine Person nur eine Adresse hat, aber eine Adresse mehrere Personen haben kann.
 
-## Schlüssel
-
-### Primärschlüssel
-
-### Fremdschlüssel
-
-## transitive Abhängigkeit
+## Transitive Abhängigkeit
 
 ## Normalformen
 
-Das Ziel der Normalformen ist das überführen der Daten in eine Form, die eine möglichst geringe Redundanz (z.B. Doppelungen von Informationen) aufweist. In folge dessen sind Datenbanken nach einer Überführung in die dritte Normalform auch übersichtlicher. Die Normalformen sind in der Reihenfolge der Anwendung auf die Datenbank zu verstehen. Die Normalformen sind:
+Das Ziel der Normalformen ist das überführen der Daten in eine Form, die eine
 
-### 1. Normalform
+- möglichst geringe Redundanz
+- keine Anomalien
 
-Vorraussetzung für die erste Normalform ist, 'oster egg' dass jeder Wert in atomarer Form vorliegt. Das bedeutet, dass zum Überführen einer Datenbank in die erste Normalform eine Adresse von der Form `Straße 1 12345 Stadt` in die Form `Straße, Hausnummer, PLZ, Stadt` überführt werden muss.
+aufweist. Vorteile sind dabei:
 
-### 2. Normalform
+- Reduzierter Arbeitsaufwans
+- Fehlervermeidung
+- Eingabeerleichterung
+- Speicherplatzeinsparung (keine Redundanzen)
+- übersichtlicher
 
-Um eine Tabelle aus der ersten Normalform in die Zweite Normalform zu überführen muss jedes Element eindeutig abhängig vom Primärschlüssel sein und darf nicht von einem anderen nicht-Schlüssel Element abhängig sein.
+> Graphische Erklärung der Normalformen: https://www.tinohempel.de/info/info/datenbank/normalisierung.htm
 
-### 3. Normalform
+Die Normalformen sind in der Reihenfolge der Anwendung auf die Datenbank zu verstehen. Die Normalformen sind:
 
-Ein Relationenschema befindet sich in der 3. Normalform, wenn es in der 2. Normalform ist und kein Attribut, das nicht zum Identifikationsschlüssel gehört, von diesem transitiv abhängt.
+### 1. Normalform (atomar)
 
-## Datenbankschema
+Vorraussetzung für die erste Normalform ist, dass jeder Wert in atomarer Form vorliegt. Das bedeutet, dass zum Überführen einer Datenbank in die erste Normalform eine Adresse von der Form `Straße 1 12345 Stadt` in die Form `Straße, Hausnummer, PLZ, Stadt` überführt werden muss. Ggf entstehen neue Primärschlüssel, da bestehende ihre Eindeutigkeit verlieren können
+
+### 2. Normalform (funktionale Abhängigkeit)
+
+Ein Relationsschema befindet sich in der 2. Normalform, wenn
+
+- es in der 1. Normalform ist und
+- jedes Nicht-Schlüssel-Attribut vom Primärschlüssel voll funktional abhängig ist.
+
+Um die 2. Normalform zu erreichen, muss die Tabelle oft aufgeteilt werden, da mehrere Primärschlüssel für Attribute existieren können. Funktionale Abhängigkeit bedeutet, dass zu einem bestimmten Wert eines Attributs, lediglich ein Wert möglich ist. (Quasi pro Tabelle nur ein Primärschlüssel, der genau son Attribut identifiziert du Pflaume)
+
+### 3. Normalform (transitive Abhängigkeit)
+
+Ein Relationenschema befindet sich in der 3. Normalform, wenn
+
+- es in der 2. Normalform ist und
+- jedes Nichtschlüsselattribut nicht transitiv vom Primärschlüssel abhängig ist, d.h. **aus keinem Nichtschlüsselattribut folgt ein anderes Nichtschlüsselattribut.**
+
+Folgt innerhalb einer Tabelle aus einem Nichtschlüsselattribut ein anderes? Bspw. folgt aus einer PLZ auch der Ort, sowas muss also in ne neue Tabelle.
+
+## Relationsschema
 
 ###
 
 ## Implementation
 
-### JAVA
+### Java
 
 ```java
 private DatabaseConnector connector;
@@ -47,23 +87,21 @@ String[] columnNames = queryResult.getColumnName(); //Spaltennamen
 ```
 
 ### DatabaseConnector
-
-| Methode                                                                                       | Beschreibung                                      | Rückgabewert      |
-| --------------------------------------------------------------------------------------------- | ------------------------------------------------- | ----------------- |
-| `DatabaseConnector(String host, int port, String database, String username, String password)` | Erstellt eine neue Datenbankverbindung            | DatabaseConnector |
-| `executeStatement(String statement)`                                                          | Führt einen SQL-Befehl aus                        | void              |
-| `getCurrentQueryResult()`                                                                     | Gibt das Ergebnis der letzten Abfrage zurück      | QueryResult       |
-| `close()`                                                                                     | Schließt die Datenbankverbindung                  | void              |
-| `getErrorMessage()`                                                                           | Gibt die Fehlermeldung der letzten Abfrage zurück | String            |
-
+| Methode | Beschreibung | Rückgabewert |
+| ------- | ------------ | ------------ |
+| `DatabaseConnector(String host, int port, String database, String username, String password)` | Erstellt eine neue Datenbankverbindung | DatabaseConnector |
+| `executeStatement(String statement)` | Führt einen SQL-Befehl aus | void |
+| `getCurrentQueryResult()` | Gibt das Ergebnis der letzten Abfrage zurück      | QueryResult |
+| `close()` | Schließt die Datenbankverbindung | void |
+| `getErrorMessage()` | Gibt die Fehlermeldung der letzten Abfrage zurück | String |
 ### QueryResult
 
-| Methode            | Beschreibung                                   | Rückgabewert |
-| ------------------ | ---------------------------------------------- | ------------ |
-| `getData()`        | Gibt die Daten der Abfrage zurück              | String[][]   |
-| `getColumnNames()` | Gibt die Spaltennamen der Abfrage zurück       | String[]     |
-| `getColumnTypes()` | Gibt die Spaltentypen der Abfrage zurück       | String[]     |
-| `getRowCount()`    | Gibt die Anzahl der Zeilen der Abfrage zurück  | int          |
-| `getColumnCount()` | Gibt die Anzahl der Spalten der Abfrage zurück | int          |
+| Methode            | Rückgabe                       | Rückgabewert |
+| ------------------ | ------------------------------ | ------------ |
+| `getData()`        | Daten der Abfrage              | String[][]   |
+| `getColumnNames()` | Spaltennamen der Abfrage       | String[]     |
+| `getColumnTypes()` | Datentypen der Spalten         | String[]     |
+| `getRowCount()`    | Anzahl der Zeilen der Abfrage  | int          |
+| `getColumnCount()` | Anzahl der Spalten der Abfrage | int          |
 
 ### SQL

@@ -158,4 +158,5 @@ private BinaryTree<String> generateOptimalBST(String[] pContent, int pStart, int
 }
 ```
 Erklärung:
+
 Die Methode `generateOptimalBST` ruft sich selbst rekursiv auf, bis der Start- und Endindex gleich sind. Dann wird ein neuer Baum mit dem Inhalt des Arrays an der Stelle `middle` erstellt. Der linke Teilbaum wird mit dem Inhalt des Arrays von `pStart` bis `middle - 1` erstellt und der rechte Teilbaum mit dem Inhalt des Arrays von `middle + 1` bis `pEnd`. Dies wird solange wiederholt, bis der Start- und Endindex gleich sind. Dann wird der Baum zurückgegeben.

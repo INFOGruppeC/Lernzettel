@@ -1,3 +1,5 @@
+
+
 # Datenbanken
 
 Datenbanken dienen der **elektronischen Datenverwaltung**. In einer Datenbank werden Datensätze zusammengefasst. Dazu werden Datenbankmanagementsysteme (DBMS) wie SQL benutzt.
@@ -105,3 +107,9 @@ String[] columnNames = queryResult.getColumnName(); //Spaltennamen
 | `getColumnCount()` | Anzahl der Spalten der Abfrage | int          |
 
 ### SQL
+
+```sql 
+SELECT * FROM myTable;
+```
+
+https://play.typeracer.com?universe=lang_de&rt=22wtaf1vb1
